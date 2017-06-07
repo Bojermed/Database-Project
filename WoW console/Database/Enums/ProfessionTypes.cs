@@ -20,6 +20,7 @@ namespace Database
         //Mining=9, 
         //Skinning=10
         Primary=0, 
-        Secondary=1
+        Secondary=1,
+        Testing=2
     }
 }
