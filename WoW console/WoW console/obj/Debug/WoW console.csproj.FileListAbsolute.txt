@@ -1,0 +1,10 @@
+C:\Users\Petar\Desktop\Databases Project\Database-Project\WoW console\WoW console\bin\Debug\WoW console.exe.config
+C:\Users\Petar\Desktop\Databases Project\Database-Project\WoW console\WoW console\bin\Debug\WoW console.exe
+C:\Users\Petar\Desktop\Databases Project\Database-Project\WoW console\WoW console\bin\Debug\WoW console.pdb
+C:\Users\Petar\Desktop\Databases Project\Database-Project\WoW console\WoW console\bin\Debug\EntityFramework.dll
+C:\Users\Petar\Desktop\Databases Project\Database-Project\WoW console\WoW console\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Petar\Desktop\Databases Project\Database-Project\WoW console\WoW console\bin\Debug\EntityFramework.xml
+C:\Users\Petar\Desktop\Databases Project\Database-Project\WoW console\WoW console\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Petar\Desktop\Databases Project\Database-Project\WoW console\WoW console\obj\Debug\WoW console.csprojResolveAssemblyReference.cache
+C:\Users\Petar\Desktop\Databases Project\Database-Project\WoW console\WoW console\obj\Debug\WoW console.exe
+C:\Users\Petar\Desktop\Databases Project\Database-Project\WoW console\WoW console\obj\Debug\WoW console.pdb
