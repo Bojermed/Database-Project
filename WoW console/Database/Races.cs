@@ -1,16 +1,17 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Database
 {
     public class Races
     {
-        private ICollection<Zones> zones;
+        private ICollection<Npcs> npcs;
         private ICollection<Classes> classes;
 
         public Races()
         {
-            this.zones = new HashSet<Zones>();
+            this.npcs = new HashSet<Npcs>();
             this.classes = new HashSet<Classes>();
         }
         public int Id { get; set; }
@@ -22,7 +23,8 @@ namespace Database
         [MaxLength(20)]
         public string Language { get; set; }
 
-        public int ZoneId { get; set; }
+        [Column(TypeName = "ntext")]
+        public string Location { get; set; }
 
         [MaxLength(20)]
         public string Capital { get; set; }
@@ -30,16 +32,16 @@ namespace Database
         [MaxLength(20)]
         public string Mount { get; set; }
 
-        public virtual ICollection<Zones> Zones
-        {
-            get { return this.zones; }
-            set { this.zones = value; }
-        }
-
-        public ICollection<Classes> Classes
+        public virtual ICollection<Classes> Classes
         {
             get { return this.classes; }
             set { this.classes = value; }
+        }
+
+        public virtual ICollection<Npcs> Npcs
+        {
+            get { return this.npcs; }
+            set { this.npcs = value; }
         }
     }
 }

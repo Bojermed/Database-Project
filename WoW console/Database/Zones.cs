@@ -23,7 +23,7 @@ namespace Database
         [Required]
         public virtual Continents Continent { get; set; }
 
-        public ICollection<Npcs> Npcs 
+        public virtual ICollection<Npcs> Npcs 
         {
             get { return this.npcs; }
             set { this.npcs = value; }

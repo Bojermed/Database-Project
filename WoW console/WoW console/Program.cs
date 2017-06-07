@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Database;
 
 namespace WoW_console
 {
@@ -10,6 +6,14 @@ namespace WoW_console
     {
         static void Main()
         {
+            var dbContext = new WoWDbContext();
+
+            var azeroth = new Planets() 
+            {
+                Name = "Azeroth"
+            };
+
+            dbContext.Planets.Add(azeroth);
         }
     }
 }

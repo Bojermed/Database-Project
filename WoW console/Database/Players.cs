@@ -15,13 +15,16 @@ namespace Database
         {
             this.character = new HashSet<Characters>();
         }
+
         [Key]
-        public int ID { get; set; }
+        public int Id { get; set; }
 
         [StringLength(30)]
-        public string userName { get; set; }
+        [Required]
+        public string Username { get; set; }
 
         [StringLength(30)]
+        [Required]
         public string PasswordHash { get; set; }
 
         public virtual  Server Servers { get; set; }

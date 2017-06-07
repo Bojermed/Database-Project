@@ -6,10 +6,10 @@ namespace Database
     {
         private ICollection<Npcs> npcs;
 
-        public Statuses ()
-	    {
+        public Statuses()
+        {
             this.npcs = new HashSet<Npcs>();
-	    }
+        }
 
         public int Id { get; set; }
 
@@ -17,9 +17,10 @@ namespace Database
         [Required]
         public string Name { get; set; }
 
-        public virtual ICollection<Npcs> Npcs  
+        public virtual ICollection<Npcs> Npcs
         {
-            get { return this.npcs;  }
+            get { return this.npcs; }
             set { this.npcs = value; }
         }
+    }
 }

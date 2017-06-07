@@ -11,31 +11,33 @@ namespace Database
     public class Characters
     {
         [Key]
-        public int ID { get; set; }
+        public int Id { get; set; }
 
         [StringLength(30)]
-        public string name { get; set; }
+        [Required]
+        public string Name { get; set; }
 
-        [ForeignKey("Class")]
+        public int PlayerId { get; set; }
+
+        public int RaceId { get; set; }
+
         public int ClassId { get; set; }
+   
+        public int FactionId { get; set; }
+
+        public int ProfessionId { get; set; }
+
+        public virtual Players Player { get; set; }
+
+        public virtual Races Race { get; set; }
 
         public virtual Classes Class { get; set; }
 
-        [ForeignKey("Faction")]
-        public int FactionId { get; set; }
+        public virtual Factions Faction { get; set; }
 
-        public virtual Factions faction { get; set; }
+        public virtual Professions Profession { get; set; }
+        //public virtual Professions MainProfessionId { get; set; }
 
-        [ForeignKey("Race")]
-        public int RaceId { get; set; }
-
-        public virtual Races race { get; set; }
-
-        [ForeignKey("Profession")]
-        public int ProfessionId { get; set; }
-
-        public virtual Professions mainProfession { get; set; }
-
-        public virtual Professions secondaryProfession { get; set; }
+        //public virtual Professions SecondaryProfessionId { get; set; }
     }
 }
