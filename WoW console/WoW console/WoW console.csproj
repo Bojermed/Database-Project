@@ -56,5 +56,15 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Database\WoWModels.csproj">
+      <Project>{0dd7ba19-0d79-4404-8ca0-2228de14b5fa}</Project>
+      <Name>WoWModels</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WoWDbContect\WoWDbContect.csproj">
+      <Project>{7e9d8b97-7033-40b5-ab47-baab54f49b54}</Project>
+      <Name>WoWDbContect</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

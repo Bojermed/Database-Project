@@ -8,3 +8,19 @@ C:\Users\Petar\Desktop\Databases Project\Database-Project\WoW console\WoW consol
 C:\Users\Petar\Desktop\Databases Project\Database-Project\WoW console\WoW console\obj\Debug\WoW console.csprojResolveAssemblyReference.cache
 C:\Users\Petar\Desktop\Databases Project\Database-Project\WoW console\WoW console\obj\Debug\WoW console.exe
 C:\Users\Petar\Desktop\Databases Project\Database-Project\WoW console\WoW console\obj\Debug\WoW console.pdb
+C:\Users\Lenovo Y700\Desktop\DB\Database-Project\WoW console\WoW console\obj\Debug\WoW console.csprojResolveAssemblyReference.cache
+C:\Users\Lenovo Y700\Desktop\DB\Database-Project\WoW console\WoW console\obj\Debug\WoW console.exe
+C:\Users\Lenovo Y700\Desktop\DB\Database-Project\WoW console\WoW console\obj\Debug\WoW console.pdb
+C:\Users\Lenovo Y700\Desktop\DB\Database-Project\WoW console\WoW console\bin\Debug\WoW console.exe.config
+C:\Users\Lenovo Y700\Desktop\DB\Database-Project\WoW console\WoW console\bin\Debug\WoW console.exe
+C:\Users\Lenovo Y700\Desktop\DB\Database-Project\WoW console\WoW console\bin\Debug\WoW console.pdb
+C:\Users\Lenovo Y700\Desktop\DB\Database-Project\WoW console\WoW console\bin\Debug\Database.dll
+C:\Users\Lenovo Y700\Desktop\DB\Database-Project\WoW console\WoW console\bin\Debug\EntityFramework.dll
+C:\Users\Lenovo Y700\Desktop\DB\Database-Project\WoW console\WoW console\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Lenovo Y700\Desktop\DB\Database-Project\WoW console\WoW console\bin\Debug\Database.pdb
+C:\Users\Lenovo Y700\Desktop\DB\Database-Project\WoW console\WoW console\bin\Debug\EntityFramework.xml
+C:\Users\Lenovo Y700\Desktop\DB\Database-Project\WoW console\WoW console\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Lenovo Y700\Desktop\DB\Database-Project\WoW console\WoW console\bin\Debug\WoWDbContect.dll
+C:\Users\Lenovo Y700\Desktop\DB\Database-Project\WoW console\WoW console\bin\Debug\WoWDbContect.pdb
+C:\Users\Lenovo Y700\Desktop\DB\Database-Project\WoW console\WoW console\bin\Debug\WoWDbContect.dll.config
+C:\Users\Lenovo Y700\Desktop\DB\Database-Project\WoW console\WoW console\bin\Debug\Database.dll.config
