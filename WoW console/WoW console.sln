@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WoW console", "WoW console\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Database", "Database\Database.csproj", "{0DD7BA19-0D79-4404-8CA0-2228DE14B5FA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSON reports", "JSON reports\JSON reports.csproj", "{EC054FF7-2AFB-40D8-A0B5-6D9B95270FC9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{0DD7BA19-0D79-4404-8CA0-2228DE14B5FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0DD7BA19-0D79-4404-8CA0-2228DE14B5FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0DD7BA19-0D79-4404-8CA0-2228DE14B5FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC054FF7-2AFB-40D8-A0B5-6D9B95270FC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC054FF7-2AFB-40D8-A0B5-6D9B95270FC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC054FF7-2AFB-40D8-A0B5-6D9B95270FC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC054FF7-2AFB-40D8-A0B5-6D9B95270FC9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
