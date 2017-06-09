@@ -47,11 +47,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CreateCharacter.cs" />
+    <Compile Include="CreateClass.cs" />
     <Compile Include="CreateContinet.cs" />
+    <Compile Include="CreateFaction.cs" />
     <Compile Include="CreateGender.cs" />
     <Compile Include="CreateNpc.cs" />
     <Compile Include="CreatePlanet.cs" />
+    <Compile Include="CreatePlayer.cs" />
+    <Compile Include="CreateProfession.cs" />
     <Compile Include="CreateRace.cs" />
+    <Compile Include="CreateResource.cs" />
     <Compile Include="CreateStatus.cs" />
     <Compile Include="CreateZone.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
