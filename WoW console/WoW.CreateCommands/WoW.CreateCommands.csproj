@@ -49,7 +49,10 @@
   <ItemGroup>
     <Compile Include="CreateContinet.cs" />
     <Compile Include="CreateGender.cs" />
+    <Compile Include="CreateNpcs.cs" />
     <Compile Include="CreatePlanet.cs" />
+    <Compile Include="CreateRace.cs" />
+    <Compile Include="CreateStatus.cs" />
     <Compile Include="CreateZone.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -62,9 +65,9 @@
       <Project>{0dd7ba19-0d79-4404-8ca0-2228de14b5fa}</Project>
       <Name>WoW.Models</Name>
     </ProjectReference>
-    <ProjectReference Include="..\WoWDbContect\WoW.DbContext.csproj">
+    <ProjectReference Include="..\WoWDbContect\WoW.Data.csproj">
       <Project>{7e9d8b97-7033-40b5-ab47-baab54f49b54}</Project>
-      <Name>WoW.DbContext</Name>
+      <Name>WoW.Data</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

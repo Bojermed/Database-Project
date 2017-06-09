@@ -65,9 +65,9 @@
       <Project>{DB96A28F-0AF5-4C90-A54C-C215F2BD8DA4}</Project>
       <Name>WoW.CreateCommands</Name>
     </ProjectReference>
-    <ProjectReference Include="..\WoWDbContect\WoW.DbContext.csproj">
+    <ProjectReference Include="..\WoWDbContect\WoW.Data.csproj">
       <Project>{7e9d8b97-7033-40b5-ab47-baab54f49b54}</Project>
-      <Name>WoW.DbContext</Name>
+      <Name>WoW.Data</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

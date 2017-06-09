@@ -3,13 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.6
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WoW console", "WoW console\WoW console.csproj", "{7802101B-B8EA-488F-A8DB-4B9CC1BF178C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WoW.ConsoleApp", "WoW console\WoW.ConsoleApp.csproj", "{7802101B-B8EA-488F-A8DB-4B9CC1BF178C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WoWModels", "Database\WoWModels.csproj", "{0DD7BA19-0D79-4404-8CA0-2228DE14B5FA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WoW.Models", "Database\WoW.Models.csproj", "{0DD7BA19-0D79-4404-8CA0-2228DE14B5FA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSON reports", "JSON reports\JSON reports.csproj", "{EC054FF7-2AFB-40D8-A0B5-6D9B95270FC9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WoWDbContect", "WoWDbContect\WoWDbContect.csproj", "{7E9D8B97-7033-40B5-AB47-BAAB54F49B54}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WoW.Data", "WoWDbContect\WoW.Data.csproj", "{7E9D8B97-7033-40B5-AB47-BAAB54F49B54}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WoW.LoadFile", "WoW.LoadFile\WoW.LoadFile.csproj", "{B52F9769-3E92-418A-A36C-D2F058A3A95D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WoW.CreateCommands", "WoW.CreateCommands\WoW.CreateCommands.csproj", "{DB96A28F-0AF5-4C90-A54C-C215F2BD8DA4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{7E9D8B97-7033-40B5-AB47-BAAB54F49B54}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7E9D8B97-7033-40B5-AB47-BAAB54F49B54}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7E9D8B97-7033-40B5-AB47-BAAB54F49B54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B52F9769-3E92-418A-A36C-D2F058A3A95D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B52F9769-3E92-418A-A36C-D2F058A3A95D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B52F9769-3E92-418A-A36C-D2F058A3A95D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B52F9769-3E92-418A-A36C-D2F058A3A95D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB96A28F-0AF5-4C90-A54C-C215F2BD8DA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB96A28F-0AF5-4C90-A54C-C215F2BD8DA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB96A28F-0AF5-4C90-A54C-C215F2BD8DA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB96A28F-0AF5-4C90-A54C-C215F2BD8DA4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
