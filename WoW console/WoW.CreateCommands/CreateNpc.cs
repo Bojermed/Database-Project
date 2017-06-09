@@ -3,11 +3,11 @@ using WoW_console;
 
 namespace WoW.CreateCommands
 {
-    public class CreateNpcs
+    public class CreateNpc
     {
         private readonly IWoWDbContext dbContext;
 
-        public CreateNpcs(IWoWDbContext dbContext)
+        public CreateNpc(IWoWDbContext dbContext)
         {
             this.dbContext = dbContext;
         }
