@@ -1,5 +1,6 @@
 ﻿using Database;
 using WoW_console;
+using System;
 
 namespace WoW.CreateCommands
 {
