@@ -19,7 +19,7 @@ namespace WoW.CreateCommands
                 Name = factionName
             };
 
-            this.dbContext.Professions.Add(entity);
+            this.dbContext.Factions.Add(entity);
         }
     }
 }

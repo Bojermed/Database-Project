@@ -22,7 +22,7 @@ namespace WoW.CreateCommands
 
             };
 
-            this.dbContext.Professions.Add(entity);
+            this.dbContext.Players.Add(entity);
         }
     }
 }
