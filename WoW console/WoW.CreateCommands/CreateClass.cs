@@ -21,7 +21,7 @@ namespace WoW.CreateCommands
                 Lore = lore
             };
 
-            this.dbContext.Professions.Add(entity);
+            this.dbContext.Classes.Add(entity);
         }
     }
 }
