@@ -4,6 +4,6 @@ namespace WoW_console.Contracts
 {
     public interface IEntityCreationFactory
     {
-        ICreateEntity GetEntityCreator();
+        ICreateEntity GetEntityCreator(string entityName);
     }
 }
