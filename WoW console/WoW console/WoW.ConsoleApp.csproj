@@ -65,6 +65,10 @@
       <Project>{DB96A28F-0AF5-4C90-A54C-C215F2BD8DA4}</Project>
       <Name>WoW.CreateCommands</Name>
     </ProjectReference>
+    <ProjectReference Include="..\WoW.Exports\WoW.Exports.csproj">
+      <Project>{49E6B344-1EB5-4DD2-8BB7-70BC7E212E18}</Project>
+      <Name>WoW.Exports</Name>
+    </ProjectReference>
     <ProjectReference Include="..\WoWDbContect\WoW.Data.csproj">
       <Project>{7e9d8b97-7033-40b5-ab47-baab54f49b54}</Project>
       <Name>WoW.Data</Name>

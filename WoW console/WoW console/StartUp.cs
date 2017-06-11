@@ -2,6 +2,7 @@
 using System;
 using System.Linq;
 using WoW.CreateCommands;
+using WoW.Exports;
 
 namespace WoW_console
 {
@@ -21,13 +22,12 @@ namespace WoW_console
                 .ForEach(p => Console.WriteLine(p.Name));
         }
 
-        public static void Task2()
+        public static void GetPDFReport()
         {
-            //Button - Create PDF Rerpot
             var context = new WoWDbContext();
 
             var pdf = new PdfExporter(context);
-            pdf.GenerateReport("../../../Pdf-Reports");
+            pdf.CreatePDFReport("../../../Pdf-Reports");
         }
     }
 }
