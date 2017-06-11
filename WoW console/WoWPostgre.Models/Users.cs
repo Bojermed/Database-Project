@@ -26,6 +26,10 @@ namespace WoW_Postgre.Models
 
         public int CitiesId { get; set; }
 
+        [StringLength(30)]
+        [Required]
+        public string Email { get; set; }
+
         public virtual ICollection<Characters> Character
         {
             get { return this.character; }

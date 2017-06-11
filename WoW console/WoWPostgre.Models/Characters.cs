@@ -10,5 +10,7 @@ namespace WoW_Postgre.Models
         [StringLength(30)]
         [Required]
         public string Name { get; set; }
+
+        public int UserId { get; set; }
     }
 }

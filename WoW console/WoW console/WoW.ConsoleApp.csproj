@@ -98,6 +98,10 @@
       <Project>{7e9d8b97-7033-40b5-ab47-baab54f49b54}</Project>
       <Name>WoW.Data</Name>
     </ProjectReference>
+    <ProjectReference Include="..\WoWPostgre.Models\WoWPostgre.Models.csproj">
+      <Project>{ED30A579-F02D-4BA0-ACF6-C46B72B96985}</Project>
+      <Name>WoWPostgre.Models</Name>
+    </ProjectReference>
     <ProjectReference Include="..\WoWPostgreData\WoWPostgreData.csproj">
       <Project>{2804699D-D4A4-4706-92A9-A983C477D21E}</Project>
       <Name>WoWPostgreData</Name>
