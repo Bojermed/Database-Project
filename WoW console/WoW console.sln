@@ -1,13 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WoW.ConsoleApp", "WoW console\WoW.ConsoleApp.csproj", "{7802101B-B8EA-488F-A8DB-4B9CC1BF178C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WoW.Models", "Database\WoW.Models.csproj", "{0DD7BA19-0D79-4404-8CA0-2228DE14B5FA}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSON reports", "JSON reports\JSON reports.csproj", "{EC054FF7-2AFB-40D8-A0B5-6D9B95270FC9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WoW.Data", "WoWDbContect\WoW.Data.csproj", "{7E9D8B97-7033-40B5-AB47-BAAB54F49B54}"
 EndProject
@@ -15,13 +13,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WoW.FileLoader", "WoW.LoadF
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WoW.CreateCommands", "WoW.CreateCommands\WoW.CreateCommands.csproj", "{DB96A28F-0AF5-4C90-A54C-C215F2BD8DA4}"
 EndProject
-<<<<<<< HEAD
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WoW.Exports", "WoW.Exports\WoW.Exports.csproj", "{49E6B344-1EB5-4DD2-8BB7-70BC7E212E18}"
-=======
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WoWPostgre.Models", "WoWPostgre.Models\WoWPostgre.Models.csproj", "{ED30A579-F02D-4BA0-ACF6-C46B72B96985}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WoWPostgreData", "WoWPostgreData\WoWPostgreData.csproj", "{2804699D-D4A4-4706-92A9-A983C477D21E}"
->>>>>>> 759d1b99cb35682910721b9212dcf4de6db8941d
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,10 +33,6 @@ Global
 		{0DD7BA19-0D79-4404-8CA0-2228DE14B5FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0DD7BA19-0D79-4404-8CA0-2228DE14B5FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0DD7BA19-0D79-4404-8CA0-2228DE14B5FA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EC054FF7-2AFB-40D8-A0B5-6D9B95270FC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EC054FF7-2AFB-40D8-A0B5-6D9B95270FC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EC054FF7-2AFB-40D8-A0B5-6D9B95270FC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EC054FF7-2AFB-40D8-A0B5-6D9B95270FC9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7E9D8B97-7033-40B5-AB47-BAAB54F49B54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7E9D8B97-7033-40B5-AB47-BAAB54F49B54}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7E9D8B97-7033-40B5-AB47-BAAB54F49B54}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -53,12 +45,10 @@ Global
 		{DB96A28F-0AF5-4C90-A54C-C215F2BD8DA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB96A28F-0AF5-4C90-A54C-C215F2BD8DA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB96A28F-0AF5-4C90-A54C-C215F2BD8DA4}.Release|Any CPU.Build.0 = Release|Any CPU
-<<<<<<< HEAD
 		{49E6B344-1EB5-4DD2-8BB7-70BC7E212E18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{49E6B344-1EB5-4DD2-8BB7-70BC7E212E18}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{49E6B344-1EB5-4DD2-8BB7-70BC7E212E18}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{49E6B344-1EB5-4DD2-8BB7-70BC7E212E18}.Release|Any CPU.Build.0 = Release|Any CPU
-=======
 		{ED30A579-F02D-4BA0-ACF6-C46B72B96985}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{ED30A579-F02D-4BA0-ACF6-C46B72B96985}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED30A579-F02D-4BA0-ACF6-C46B72B96985}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -67,7 +57,6 @@ Global
 		{2804699D-D4A4-4706-92A9-A983C477D21E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2804699D-D4A4-4706-92A9-A983C477D21E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2804699D-D4A4-4706-92A9-A983C477D21E}.Release|Any CPU.Build.0 = Release|Any CPU
->>>>>>> 759d1b99cb35682910721b9212dcf4de6db8941d
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

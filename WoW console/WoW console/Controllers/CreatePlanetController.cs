@@ -19,20 +19,44 @@ namespace WoW_console.Controllers
 
         public CreatePlanetController(ICreateEntity planetCreator, IReader reader, IWriter writer)
         {
-            this.EntityCreator = planetCreator;
-            this.Reader = reader;
-            this.Writer = writer;
-            this.EntityCharacteristics = new List<string>();
+            this.entityCreator = planetCreator;
+            this.reader = reader;
+            this.writer = writer;
+            this.entityCharacteristics = new List<string>();
 
         }
 
-        public ICreateEntity EntityCreator { get; private set; }
+        public ICreateEntity EntityCreator
+        {
+            get
+            {
+                return this.entityCreator;
+            }
+        }
 
-        public IReader Reader { get; private set; }
+        public IReader Reader
+        {
+            get
+            {
+                return this.reader;
+            }
+        }
 
-        public IWriter Writer { get; set; }
+        public IWriter Writer
+        {
+            get
+            {
+                return this.writer;
+            }
+        }
 
-        public IList<string> EntityCharacteristics { get; set; }
+        public IList<string> EntityCharacteristics
+        {
+            get
+            {
+                return this.entityCharacteristics;
+            }
+        }
 
         public void GuideUser()
         {

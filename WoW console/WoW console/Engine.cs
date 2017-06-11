@@ -18,15 +18,34 @@ namespace WoW_console
             this.controllerFactory = controllerFactory;
         }
 
-        public IReader Reader { get; }
+        public IReader Reader
+        {
+            get
+            {
+                return this.reader;
+            }
+        }
 
-        public IWriter Writer { get; }
+        public IWriter Writer
+        {
+            get
+            {
+                return this.writer;
+            }
+        }
 
-        public IControllerFactory ControllerFactory { get; }
+        public IControllerFactory ControllerFactory
+        {
+            get
+            {
+                return this.controllerFactory;
+            }
+        }
 
         public void Start()
         {
             // add starting screan controller
+            this.Writer.WriteLine("Please enter command:");
 
             while(true)
             {

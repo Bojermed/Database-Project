@@ -14,8 +14,10 @@ namespace WoW_console.Container
         {
             this.Bind<IReader>().To<ConsoleReader>();
             this.Bind<IWriter>().To<ConsoleWriter>();
+            this.Bind<IEngine>().To<Engine>();
             this.Bind<IEntityCreationFactory>().To<EntityCreationFactory>();
             this.Bind<IControllerFactory>().To<ControllerFactory>();
+            this.Bind<IWoWDbContext>().To<WoWDbContext>();
 
             this.Bind<ICreateEntity>().To<CreatePlanet>().Named("CreatePlanet");
 

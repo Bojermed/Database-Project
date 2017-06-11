@@ -14,7 +14,13 @@ namespace WoW.CreateCommands
             this.dbContext = dbContext;
         }
 
-        public IWoWDbContext DbContext { get; }
+        public IWoWDbContext DbContext
+        {
+            get
+            {
+                return this.dbContext;
+            }
+        }
 
         public void CreateEntity(IList<string> entityCharacteristics)
         {
@@ -24,6 +30,7 @@ namespace WoW.CreateCommands
             };
 
             this.DbContext.Planets.Add(planet);
+            this.DbContext.SaveChanges();
         }
     }
 }

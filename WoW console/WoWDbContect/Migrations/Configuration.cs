@@ -1,4 +1,4 @@
-namespace WoWDbContect.Migrations
+namespace WoWDbContext.Migrations
 {
     using System;
     using System.Data.Entity;
