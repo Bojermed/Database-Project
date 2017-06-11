@@ -19,14 +19,15 @@ and do battle on the fields of
 AZEROTH.           
             ";
 
-        private const string COMMAND_INSTRUCTIONS = @"Enther the command
+        private const string COMMAND_INSTRUCTIONS = @"--------------
+Enther command
 --Login
 --Register
 --Help
 --Exit
-to access, create an account or to view all commands
+to access and create an account, view all commands
 or terminate the program.
-";
+--------------";
 
         private readonly IWriter writer;
 

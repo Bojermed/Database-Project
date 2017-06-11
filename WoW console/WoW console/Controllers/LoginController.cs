@@ -58,9 +58,9 @@ namespace WoW_console.Controllers
         public string Login()
         {
             this.Writer.WriteLine(USERNAME_PROMPT);
-            var username = this.Reader.ReadLine().ToLower();
+            var username = this.Reader.ReadLine();
             this.Writer.WriteLine(PASSWORD_PROMPT);
-            var password = this.Reader.ReadLine().ToLower();
+            var password = this.Reader.ReadLine();
             var hashedPassword = this.Hasher.Hash(username, password);
 
             var dbPassword = this.DbContext.Players.Where(p => p.Username == username).FirstOrDefault().PasswordHash;

@@ -9,11 +9,11 @@ namespace WoW_console.Controllers
 --Register - creates a user account
 --Login - access your account
 --Logout - leave your account
+--Status - display your login status
 --Create [Entity] - creates an entity of specified type.
 Allowed enities:
 Character
-Example use: ""--Create Character""
-";
+Example useage: ""--Create Character"" ";
         private readonly IWriter writer;
 
         public HelpController(IWriter writer)
