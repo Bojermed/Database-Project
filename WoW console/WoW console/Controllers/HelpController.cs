@@ -10,6 +10,7 @@ namespace WoW_console.Controllers
 --Login - access your account
 --Logout - leave your account
 --Status - display your login status
+--List-Characters - lists your characters when you are logged in
 --Create [Entity] - creates an entity of specified type.
 Allowed enities:
 Character

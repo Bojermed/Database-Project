@@ -66,6 +66,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Container\WoWNinjectModule.cs" />
+    <Compile Include="Controllers\CreateClassController.cs" />
     <Compile Include="Controllers\CreatePlanetController.cs" />
     <Compile Include="Contracts\ICreationController.cs" />
     <Compile Include="Controllers\HelpController.cs" />

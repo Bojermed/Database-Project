@@ -107,6 +107,10 @@ namespace WoW_console
                         var planetCreator = this.ControllerFactory.GetController("CreatePlanetController");
                         planetCreator.GuideUser();
                     }
+                    else if (userInput[1] == "character")
+                    {
+                        // implement character creation
+                    }
                 }
                 else if (userInput[0] == "--register" && !this.LoggedIn)
                 {

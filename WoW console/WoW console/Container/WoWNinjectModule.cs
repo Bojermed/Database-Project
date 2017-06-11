@@ -25,7 +25,7 @@ namespace WoW_console.Container
             this.Bind<IRegisterController>().To<RegisterController>();
             this.Bind<ILoginController>().To<LoginController>();
 
-            this.Bind<ICreateEntity>().To<CreatePlanet>().Named("CreatePlanet");
+            this.Bind<ICreateEntity>().To<CreatePlanet>().WhenInjectedExactlyInto<CreatePlanetController>();
             this.Bind<ICreateEntity>().To<CreatePlayer>().WhenInjectedExactlyInto<RegisterController>();
 
             this.Bind<ICreationController>().To<CreatePlanetController>().Named("CreatePlanetController");
