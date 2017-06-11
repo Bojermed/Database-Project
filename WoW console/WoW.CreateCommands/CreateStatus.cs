@@ -1,4 +1,5 @@
 ﻿using Database;
+using System.Collections.Generic;
 using WoW_console;
 
 namespace WoW.CreateCommands
@@ -12,14 +13,23 @@ namespace WoW.CreateCommands
             this.dbContext = dbContext;
         }
 
-        public void GetStatus(string name)
+        public IWoWDbContext DbContext
+        {
+            get
+            {
+                return this.dbContext;
+            }
+        }
+
+        public void CreateEntity(IList<string> entityCharacteristics)
         {
             var status = new Statuses()
             {
-                Name = name
+                Name = entityCharacteristics[0]
             };
 
-            this.dbContext.Statuses.Add(status);
+            this.DbContext.Statuses.Add(status);
+            this.DbContext.SaveChanges();
         }
     }
 }

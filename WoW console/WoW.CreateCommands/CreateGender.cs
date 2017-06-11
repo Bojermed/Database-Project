@@ -1,9 +1,11 @@
 ﻿using Database;
+using System.Collections.Generic;
+using WoW.CreateCommands.Contracts;
 using WoW_console;
 
 namespace WoW.CreateCommands
 {
-    public class CreateGender
+    public class CreateGender : ICreateEntity
     {
         private readonly IWoWDbContext dbContext;
 
@@ -12,14 +14,20 @@ namespace WoW.CreateCommands
             this.dbContext = dbContext;
         }
 
-        public void GetGender(string name)
+        public IWoWDbContext DbContext
+        {
+            get { return this.dbContext; }
+        }
+
+        public void CreateEntity(IList<string> entityCharacteristics)
         {
             var gender = new Genders()
             {
-                Name = name
+                Name = entityCharacteristics[0]
             };
 
-            this.dbContext.Genders.Add(gender);
+            this.DbContext.Genders.Add(gender);
+            this.DbContext.SaveChanges();
         }
     }
 }
