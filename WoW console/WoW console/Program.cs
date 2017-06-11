@@ -4,6 +4,7 @@ using System.Linq;
 using WoW.CreateCommands;
 using WoWPostgreData;
 using WoW_Postgre.Data;
+using WoW_Postgre.Models;
 
 namespace WoW_console
 {
@@ -23,10 +24,8 @@ namespace WoW_console
             //    .ForEach(p => Console.WriteLine(p.Name));
 
             var dbContext = new WoWDbPostgreContext();
-            var country = new CreateCountry(dbContext);
-            var city = new CreateCity(dbContext);
-            //country.GetCountries("Bulgaria");
-            city.GetCity("Burgas",1);
+            var cities = dbContext.Cities.ToList();
+            cities.ForEach(p => Console.WriteLine(p.Name));
             dbContext.SaveChanges();
 
         }

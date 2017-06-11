@@ -74,6 +74,10 @@
     <Compile Include="Migrations\201706111121518_Email+RK User-Character.Designer.cs">
       <DependentUpon>201706111121518_Email+RK User-Character.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201706111207331_Check for changes.cs" />
+    <Compile Include="Migrations\201706111207331_Check for changes.Designer.cs">
+      <DependentUpon>201706111207331_Check for changes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WoWDbPostgreContext.cs" />
@@ -97,6 +101,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201706111121518_Email+RK User-Character.resx">
       <DependentUpon>201706111121518_Email+RK User-Character.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706111207331_Check for changes.resx">
+      <DependentUpon>201706111207331_Check for changes.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
