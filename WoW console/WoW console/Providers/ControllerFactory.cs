@@ -1,6 +1,6 @@
 ﻿using Ninject;
-using WoW.CreateCommands.Contracts;
 using WoW_console.Contracts;
+using WoW_console.Controllers;
 
 namespace WoW_console.Providers
 {
@@ -16,6 +16,21 @@ namespace WoW_console.Providers
         public ICreationController GetController(string controllerName)
         {
             return this.kernel.Get<ICreationController>(controllerName);
+        }
+
+        public IInformational GetInformationalController(string controllerName)
+        {
+            return this.kernel.Get<IInformational>(controllerName);
+        }
+
+        public IRegisterController GetRegistrationController()
+        {
+            return this.kernel.Get<IRegisterController>();
+        }
+
+        public ILoginController GetLoginController()
+        {
+            return this.kernel.Get<ILoginController>();
         }
     }
 }
