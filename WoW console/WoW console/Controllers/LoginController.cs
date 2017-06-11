@@ -1,5 +1,6 @@
 ﻿using WoW_console.Contracts;
 using System.Linq;
+using System;
 
 namespace WoW_console.Controllers
 {
@@ -8,7 +9,8 @@ namespace WoW_console.Controllers
         private const string USERNAME_PROMPT = "Enter your username:";
         private const string PASSWORD_PROMPT = "Enter your password:";
         private const string SUCCESSEFUL_LOGIN = "{0}, you have loged in successfully!";
-        private const string FAILED_LOGIN = "Username or password is wrong. Please try again...";
+        private const string INCORRECT_PASSWORD = "Password is incorrect. Please try again...";
+        private const string USER_NOT_FOUND = "Username was not found. Please try again...";
 
         private readonly IWoWDbContext dbContext;
         private readonly IReader reader;
@@ -63,7 +65,16 @@ namespace WoW_console.Controllers
             var password = this.Reader.ReadLine();
             var hashedPassword = this.Hasher.Hash(username, password);
 
-            var dbPassword = this.DbContext.Players.Where(p => p.Username == username).FirstOrDefault().PasswordHash;
+            var dbPassword = "";
+            try
+            {
+                dbPassword = this.DbContext.Players.Where(p => p.Username == username).FirstOrDefault().PasswordHash;                
+            }
+            catch(Exception ex)
+            {
+                this.Writer.WriteLine(USER_NOT_FOUND);
+                return "";
+            }
 
             if(hashedPassword == dbPassword)
             {
@@ -72,7 +83,7 @@ namespace WoW_console.Controllers
             }
             else
             {
-                this.Writer.WriteLine(FAILED_LOGIN);
+                this.Writer.WriteLine(INCORRECT_PASSWORD);
                 return "";
             }
         }

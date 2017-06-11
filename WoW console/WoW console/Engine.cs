@@ -6,11 +6,12 @@ namespace WoW_console
     {
         private const string PROMPT_USER = "You can enter a new command:";
         private const string PROGRAM_TERMINATED = "Program has been terminated.";
-        private const string WRONG_COMMAND = "You have entered an invalid command, please try again.";
+        private const string WRONG_COMMAND = "You have entered an invalid command, please try again...";
         private const string SUCCESSEFUL_LOGIN = "You are now logged in!";
         private const string LOGOUT_MESSAGE = "You are now logged out!";
         private const string LOGEDIN_STATUS = "You are logged in as {0}.";
         private const string LOGEDOUT_STATUS = "You are not logged in yet.";
+        private const string LOGOUT_TO_REGISTER = "You must log out before registering a new player.";
 
         private readonly IReader reader;
         private readonly IWriter writer;
@@ -124,6 +125,10 @@ namespace WoW_console
                         this.Writer.WriteLine(SUCCESSEFUL_LOGIN);
                     }
                 }
+                else if (userInput[0] == "--register" && this.LoggedIn)
+                {
+                    this.Writer.WriteLine(LOGOUT_TO_REGISTER);
+                }
                 else if (userInput[0] == "--login" && !this.LoggedIn)
                 {
                     var loginController = this.ControllerFactory.GetLoginController();
@@ -144,7 +149,7 @@ namespace WoW_console
                 }
                 else if (userInput[0] == "--status" && this.LoggedIn)
                 {
-                    this.Writer.WriteLine(LOGEDIN_STATUS);
+                    this.Writer.WriteLine(string.Format(LOGEDIN_STATUS, this.CurrentUsername));
                 }
                 else if (userInput[0] == "--status" && !this.LoggedIn)
                 {
