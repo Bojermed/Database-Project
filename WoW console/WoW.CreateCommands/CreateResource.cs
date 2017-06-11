@@ -14,12 +14,12 @@ namespace WoW.CreateCommands
 
         public void GetResources(string resourceName)
         {
-            var resource = new Professions()
+            var resource = new Resources()
             {
                 Name = resourceName
             };
 
-            this.dbContext.Professions.Add(resource);
+            this.dbContext.Resources.Add(resource);
         }
     }
 }

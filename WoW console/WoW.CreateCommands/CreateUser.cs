@@ -12,13 +12,14 @@ namespace WoW.CreateCommands
             this.dbContext = dbContext;
         }
 
-        public void GetPlayer(string playerName, string passwordHash, int cityId)
+        public void GetPlayer(string playerName, string passwordHash, int cityId, string email)
         {
             var entity = new Users()
             {
                 Username = playerName,
                 PasswordHash = passwordHash,
-                CitiesId = cityId
+                CitiesId = cityId,
+                Email = email
 
             };
 
