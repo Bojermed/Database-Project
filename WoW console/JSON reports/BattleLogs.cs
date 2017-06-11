@@ -1,13 +1,13 @@
-﻿using Newtonsoft.Json;
+﻿//using Newtonsoft.Json;
 
 namespace JSON_reports
 {
     public class BattleLogs
     {
-        [JsonProperty("id")]
+        //[JsonProperty("id")]
         public int Id { get; set; }
 
-        [JsonProperty("userName")]
+        //[JsonProperty("userName")]
         public string UserName { get; set; }
 
     }
