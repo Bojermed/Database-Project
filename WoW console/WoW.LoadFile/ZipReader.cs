@@ -4,11 +4,11 @@ using Ionic.Zip;
 
 namespace WoW.LoadFile
 {
-    public static class ZipReader
+    public class ZipReader : IZipReader
     {
-        private const string ExtractFolder = "../../ExtractedFiles";
+        private const string ExtractFolder = "../../../ExtractedFiles";
 
-        public static void Read(string Location)
+        public void ReadZip(string Location)
         {
             using (var zip = ZipFile.Read(Location))
             {

@@ -5,7 +5,7 @@ using WoW.CreateCommands;
 
 namespace WoW_console
 {
-    class Program
+    class StartUp
     {
         static void Main()
         {
@@ -19,6 +19,15 @@ namespace WoW_console
                 .ToList();
             planetForSearch
                 .ForEach(p => Console.WriteLine(p.Name));
+        }
+
+        public static void Task2()
+        {
+            //Button - Create PDF Rerpot
+            var context = new WoWDbContext();
+
+            var pdf = new PdfExporter(context);
+            pdf.GenerateReport("../../../Pdf-Reports");
         }
     }
 }

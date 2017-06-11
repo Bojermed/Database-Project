@@ -11,9 +11,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSON reports", "JSON report
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WoW.Data", "WoWDbContect\WoW.Data.csproj", "{7E9D8B97-7033-40B5-AB47-BAAB54F49B54}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WoW.LoadFile", "WoW.LoadFile\WoW.LoadFile.csproj", "{B52F9769-3E92-418A-A36C-D2F058A3A95D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WoW.FileLoader", "WoW.LoadFile\WoW.FileLoader.csproj", "{B52F9769-3E92-418A-A36C-D2F058A3A95D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WoW.CreateCommands", "WoW.CreateCommands\WoW.CreateCommands.csproj", "{DB96A28F-0AF5-4C90-A54C-C215F2BD8DA4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WoW.Exports", "WoW.Exports\WoW.Exports.csproj", "{49E6B344-1EB5-4DD2-8BB7-70BC7E212E18}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{DB96A28F-0AF5-4C90-A54C-C215F2BD8DA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB96A28F-0AF5-4C90-A54C-C215F2BD8DA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB96A28F-0AF5-4C90-A54C-C215F2BD8DA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49E6B344-1EB5-4DD2-8BB7-70BC7E212E18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49E6B344-1EB5-4DD2-8BB7-70BC7E212E18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49E6B344-1EB5-4DD2-8BB7-70BC7E212E18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49E6B344-1EB5-4DD2-8BB7-70BC7E212E18}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
