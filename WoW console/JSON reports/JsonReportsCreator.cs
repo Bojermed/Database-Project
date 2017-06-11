@@ -12,7 +12,7 @@ namespace JSON_reports
         private readonly ICollection<ProductSale> Sales;
         private readonly ICollection<ProductReport> Reports;
 
-        public JsonReportsHandler(ICollection<Spaceship> spaceships, ICollection<ProductSale> sales, ICollection<ProductReport> reports)
+        public void JsonReportsHandler(ICollection<Spaceship> spaceships, ICollection<ProductSale> sales, ICollection<ProductReport> reports)
         {
             this.Spaceships = spaceships;
             this.Sales = sales;
