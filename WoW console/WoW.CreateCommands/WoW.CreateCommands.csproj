@@ -47,12 +47,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CreateCharacter.cs" />
+    <Compile Include="CreateCharacterPostgre.cs" />
+    <Compile Include="CreateCity.cs" />
+    <Compile Include="CreateClass.cs" />
     <Compile Include="CreateContinet.cs" />
+    <Compile Include="CreateCountry.cs" />
+    <Compile Include="CreateFaction.cs" />
     <Compile Include="CreateGender.cs" />
-    <Compile Include="CreateNpcs.cs" />
+    <Compile Include="CreateNpc.cs" />
     <Compile Include="CreatePlanet.cs" />
+    <Compile Include="CreatePlayer.cs" />
+    <Compile Include="CreateProfession.cs" />
     <Compile Include="CreateRace.cs" />
+    <Compile Include="CreateResource.cs" />
     <Compile Include="CreateStatus.cs" />
+    <Compile Include="CreateUser.cs" />
     <Compile Include="CreateZone.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -68,6 +78,14 @@
     <ProjectReference Include="..\WoWDbContect\WoW.Data.csproj">
       <Project>{7e9d8b97-7033-40b5-ab47-baab54f49b54}</Project>
       <Name>WoW.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WoWPostgre.Models\WoWPostgre.Models.csproj">
+      <Project>{ED30A579-F02D-4BA0-ACF6-C46B72B96985}</Project>
+      <Name>WoWPostgre.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WoWPostgreData\WoWPostgreData.csproj">
+      <Project>{2804699D-D4A4-4706-92A9-A983C477D21E}</Project>
+      <Name>WoWPostgreData</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

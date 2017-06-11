@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26430.6
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WoW.ConsoleApp", "WoW console\WoW.ConsoleApp.csproj", "{7802101B-B8EA-488F-A8DB-4B9CC1BF178C}"
 EndProject
@@ -15,7 +15,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WoW.FileLoader", "WoW.LoadF
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WoW.CreateCommands", "WoW.CreateCommands\WoW.CreateCommands.csproj", "{DB96A28F-0AF5-4C90-A54C-C215F2BD8DA4}"
 EndProject
+<<<<<<< HEAD
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WoW.Exports", "WoW.Exports\WoW.Exports.csproj", "{49E6B344-1EB5-4DD2-8BB7-70BC7E212E18}"
+=======
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WoWPostgre.Models", "WoWPostgre.Models\WoWPostgre.Models.csproj", "{ED30A579-F02D-4BA0-ACF6-C46B72B96985}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WoWPostgreData", "WoWPostgreData\WoWPostgreData.csproj", "{2804699D-D4A4-4706-92A9-A983C477D21E}"
+>>>>>>> 759d1b99cb35682910721b9212dcf4de6db8941d
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,10 +53,21 @@ Global
 		{DB96A28F-0AF5-4C90-A54C-C215F2BD8DA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB96A28F-0AF5-4C90-A54C-C215F2BD8DA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB96A28F-0AF5-4C90-A54C-C215F2BD8DA4}.Release|Any CPU.Build.0 = Release|Any CPU
+<<<<<<< HEAD
 		{49E6B344-1EB5-4DD2-8BB7-70BC7E212E18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{49E6B344-1EB5-4DD2-8BB7-70BC7E212E18}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{49E6B344-1EB5-4DD2-8BB7-70BC7E212E18}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{49E6B344-1EB5-4DD2-8BB7-70BC7E212E18}.Release|Any CPU.Build.0 = Release|Any CPU
+=======
+		{ED30A579-F02D-4BA0-ACF6-C46B72B96985}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED30A579-F02D-4BA0-ACF6-C46B72B96985}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED30A579-F02D-4BA0-ACF6-C46B72B96985}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED30A579-F02D-4BA0-ACF6-C46B72B96985}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2804699D-D4A4-4706-92A9-A983C477D21E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2804699D-D4A4-4706-92A9-A983C477D21E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2804699D-D4A4-4706-92A9-A983C477D21E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2804699D-D4A4-4706-92A9-A983C477D21E}.Release|Any CPU.Build.0 = Release|Any CPU
+>>>>>>> 759d1b99cb35682910721b9212dcf4de6db8941d
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -17,10 +17,10 @@ namespace WoW.CreateCommands
             var race = new Races()
             {
                 Name = name,
-                Language=language,
-                Location=location,
-                Capital=capital,
-                Mount=mount
+                Language = language,
+                Location = location,
+                Capital = capital,
+                Mount = mount
             };
 
             this.dbContext.Races.Add(race);
