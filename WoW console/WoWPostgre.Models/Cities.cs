@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace WoW_Postgre.Models
 {
@@ -17,6 +18,7 @@ namespace WoW_Postgre.Models
 
         [StringLength(30)]
         [Required]
+        [Index("CountryIndex", IsUnique = true)]
         public string Name { get; set; }
 
         public int CountriesId { get; set; }

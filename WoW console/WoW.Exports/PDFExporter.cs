@@ -6,7 +6,7 @@ using WoW_console;
 
 namespace WoW.Exports
 {
-    public class PdfExporter : IPdfExporter
+    public class PdfExporter: IPdfExporter
     {
         private WoWDbContext dbContext;
 
@@ -38,7 +38,7 @@ namespace WoW.Exports
                 cell.HorizontalAlignment = 2;
                 table.AddCell(cell);
 
-                var tableHeaders = new List<string>() { "characterType", "Manufacturer", "Processor", "Memory", "Video card", "Price" };
+                var tableHeaders = new List<string>() { "Name", "Player", "Race", "Class", "Faction", "Profession" };
                 for (int i = 0; i < columns; i++)
                 {
                     var headerCell = new PdfPCell(new Phrase(tableHeaders[i], bold));
