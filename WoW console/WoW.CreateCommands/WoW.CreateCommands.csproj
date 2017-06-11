@@ -64,6 +64,7 @@
     <Compile Include="CreateStatus.cs" />
     <Compile Include="CreateUser.cs" />
     <Compile Include="CreateZone.cs" />
+    <Compile Include="Contracts\ICreateEntity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -88,5 +89,6 @@
       <Name>WoWPostgreData</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

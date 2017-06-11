@@ -1,9 +1,11 @@
 ﻿using Database;
+using System.Collections.Generic;
+using WoW.CreateCommands.Contracts;
 using WoW_console;
 
 namespace WoW.CreateCommands
 {
-    public class CreatePlanet
+    public class CreatePlanet : ICreateEntity
     {
         private readonly IWoWDbContext dbContext;
 
@@ -12,14 +14,16 @@ namespace WoW.CreateCommands
             this.dbContext = dbContext;
         }
 
-        public void GetPlanets(string inputName)
+        public IWoWDbContext DbContext { get; }
+
+        public void CreateEntity(IList<string> entityCharacteristics)
         {
             var planet = new Planets()
             {
-                Name = inputName
+                Name = entityCharacteristics[0]
             };
 
-            this.dbContext.Planets.Add(planet);
+            this.DbContext.Planets.Add(planet);
         }
     }
 }
