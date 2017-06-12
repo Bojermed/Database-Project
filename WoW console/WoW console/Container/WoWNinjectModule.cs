@@ -20,6 +20,7 @@ namespace WoW_console.Container
             this.Bind<IWoWDbContext>().To<WoWDbContext>();
 
             this.Bind<ICreateEntity>().To<CreatePlanet>().Named("CreatePlanet");
+            //this.Bind<ICreateEntity>().To<CreateCharacter>().Named("CreateCharacter"); for tomorrow
 
             this.Bind<ICreationController>().To<CreatePlanetController>().Named("CreatePlanetController");
         }
