@@ -72,10 +72,10 @@ namespace WoW_console.Controllers
         public string RegisterUser()
         {
             // check if username is unique
-            this.Writer.WriteLine(USERNAME_PROMPT);
+            this.Writer.WriteLineInfo(USERNAME_PROMPT);
             string username = this.Reader.ReadLine();
-            this.Writer.WriteLine(PASSWORD_PROMPT);
-            string password = this.Reader.ReadLine();
+            this.Writer.WriteLineInfo(PASSWORD_PROMPT);
+            string password = this.Reader.ReadLinePassword();
             
             var hashedPassword = Hasher.Hash(username, password);
 
@@ -86,12 +86,12 @@ namespace WoW_console.Controllers
             try
             {
                 this.PlayerCreator.CreateEntity(this.EntityCharacteristics);
-                this.Writer.WriteLine(string.Format(SUCCESSEFUL_REGISTRATION, username));
+                this.Writer.WriteLineSuccess(string.Format(SUCCESSEFUL_REGISTRATION, username));
                 return username;
             }
             catch (Exception ex)
             {
-                this.Writer.WriteLine(FAILIURE_REGISTRATION);
+                this.Writer.WriteLineError(FAILIURE_REGISTRATION);
                 return "";
             }
         }

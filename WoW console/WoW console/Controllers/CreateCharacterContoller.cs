@@ -12,7 +12,6 @@ namespace WoW_console.Controllers
         private const string UNSUCCESSEFUL_CREATION = "Character creation was unsucesseful. Please try again...";
         private const string SUCCESSEFUL_CREATION = "Character of name {0} successfully created!";
         private const string INVALID_RACE = "Your race should be one of the list";
-
         private readonly ICreateEntity entityCreator;
         private readonly IReader reader;
         private readonly IWriter writer;
@@ -68,7 +67,7 @@ namespace WoW_console.Controllers
 
             var racesInGame = new List<string> { "Draenei", "Dwarf", "Gnome", "Human", "Night elf", "Pandaren", "Worgen",
                                                  "Blood elf", "Forsaken", "Goblin","Orc", "Pandaren", "Tauren", "Troll" };     
-            this.Writer.WriteLine(string.Format(PROMPT_MESSAGE+" Possible races:", "race"));
+            this.Writer.WriteLineInfo(string.Format(PROMPT_MESSAGE+" Possible races:", "race"));
             var characterRace = this.Reader.ReadLine();
             EntityCharacteristics.Add(characterRace);
             

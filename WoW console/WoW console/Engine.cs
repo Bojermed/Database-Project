@@ -93,12 +93,12 @@ namespace WoW_console
             while(true)
             {
                 this.Writer.WriteLine("");
-                this.Writer.WriteLine(PROMPT_USER);
+                this.Writer.WriteLineInfo(PROMPT_USER);
                 var userInput = this.reader.ReadLine().ToLower().Split(' ');
 
                 if(userInput[0] == "--exit")
                 {
-                    this.Writer.WriteLine(PROGRAM_TERMINATED);
+                    this.Writer.WriteLineError(PROGRAM_TERMINATED);
                     break;
                 }
                 else if(userInput[0] == "--help")
@@ -132,7 +132,7 @@ namespace WoW_console
                 }
                 else if (userInput[0] == "--register" && this.LoggedIn)
                 {
-                    this.Writer.WriteLine(LOGOUT_TO_REGISTER);
+                    this.Writer.WriteLineError(LOGOUT_TO_REGISTER);
                 }
                 else if (userInput[0] == "--login" && !this.LoggedIn)
                 {
@@ -150,19 +150,19 @@ namespace WoW_console
                 {
                     this.LoggedIn = false;
                     this.CurrentUsername = "";
-                    this.Writer.WriteLine(LOGOUT_MESSAGE);
+                    this.Writer.WriteLineError(LOGOUT_MESSAGE);
                 }
                 else if (userInput[0] == "--status" && this.LoggedIn)
                 {
-                    this.Writer.WriteLine(string.Format(LOGEDIN_STATUS, this.CurrentUsername));
+                    this.Writer.WriteLineSuccess(string.Format(LOGEDIN_STATUS, this.CurrentUsername));
                 }
                 else if (userInput[0] == "--status" && !this.LoggedIn)
                 {
-                    this.Writer.WriteLine(LOGEDOUT_STATUS);
+                    this.Writer.WriteLineError(LOGEDOUT_STATUS);
                 }
                 else
                 {
-                    this.Writer.WriteLine(WRONG_COMMAND);
+                    this.Writer.WriteLineError(WRONG_COMMAND);
                 }
             }
 
