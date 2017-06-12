@@ -28,10 +28,15 @@ namespace WoW_console.Providers
         {
             return this.kernel.Get<IRegisterController>();
         }
-
+        
         public ILoginController GetLoginController()
         {
             return this.kernel.Get<ILoginController>();
+        }
+
+        public IListCharactersController GetListCharactersController()
+        {
+            return this.kernel.Get<IListCharactersController>();
         }
 
         public IImporter ImportFiles()

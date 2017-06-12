@@ -14,6 +14,8 @@ namespace WoW_console.Contracts
 
         ILoginController GetLoginController();
 
+        IListCharactersController GetListCharactersController();
+
         IImporter ImportFiles();
 
         IPdfExporter ExportFiles();

@@ -116,7 +116,7 @@ namespace WoW_console
                 }
                 else if (userInput[0] == "--list-characters" && this.LoggedIn)
                 {
-                    var listController = this.ControllerFactory.GetListCharacterController();
+                    var listController = this.ControllerFactory.GetListCharactersController();
                     listController.ListCharacters(this.CurrentUsername);
                 }
                 else if (userInput[0] == "--register" && !this.LoggedIn)
