@@ -78,6 +78,10 @@
     <Compile Include="Migrations\201706111207331_Check for changes.Designer.cs">
       <DependentUpon>201706111207331_Check for changes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201706120816465_Add unique constrains.cs" />
+    <Compile Include="Migrations\201706120816465_Add unique constrains.Designer.cs">
+      <DependentUpon>201706120816465_Add unique constrains.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WoWDbPostgreContext.cs" />
@@ -104,6 +108,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201706111207331_Check for changes.resx">
       <DependentUpon>201706111207331_Check for changes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706120816465_Add unique constrains.resx">
+      <DependentUpon>201706120816465_Add unique constrains.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
