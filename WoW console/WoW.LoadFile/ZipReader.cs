@@ -6,7 +6,7 @@ namespace WoW.LoadFile
 {
     public class ZipReader : IZipReader
     {
-        private const string ExtractFolder = "../../../ExtractedFiles";
+        private const string ExtractFolder = "..\\..\\ExtractedFiles";
 
         public void ReadZip(string Location)
         {
@@ -23,6 +23,7 @@ namespace WoW.LoadFile
                     if (!entry.IsDirectory)
                     {
                         entry.Extract(ExtractFolder);
+                        writer
                         Console.WriteLine(entry.FileName + " has been extracted");
                     }
                 }

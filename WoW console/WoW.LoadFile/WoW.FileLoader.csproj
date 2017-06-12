@@ -68,6 +68,10 @@
       <Project>{0DD7BA19-0D79-4404-8CA0-2228DE14B5FA}</Project>
       <Name>WoW.Models</Name>
     </ProjectReference>
+    <ProjectReference Include="..\WoWDbContect\WoW.Data.csproj">
+      <Project>{7E9D8B97-7033-40B5-AB47-BAAB54F49B54}</Project>
+      <Name>WoW.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

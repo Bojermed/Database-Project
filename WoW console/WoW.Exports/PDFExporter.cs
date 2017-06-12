@@ -8,9 +8,9 @@ namespace WoW.Exports
 {
     public class PdfExporter: IPdfExporter
     {
-        private WoWDbContext dbContext;
+        private IWoWDbContext dbContext;
 
-        public PdfExporter(WoWDbContext context)
+        public PdfExporter(IWoWDbContext context)
         {
             this.dbContext = context;
         }
