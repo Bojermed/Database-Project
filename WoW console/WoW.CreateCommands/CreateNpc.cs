@@ -1,4 +1,5 @@
 ﻿using Database;
+using System.Collections.Generic;
 using WoW_console;
 
 namespace WoW.CreateCommands
@@ -12,22 +13,28 @@ namespace WoW.CreateCommands
             this.dbContext = dbContext;
         }
 
-        public void GetNpcs(string name, string titles, int health, int genderId, int raceId, int classId, int factionId, int statusId, int zoneId)
+        public IWoWDbContext DbContext
+        {
+            get { return this.dbContext; }
+        }
+
+        public void CreateEntity(IList<string> entityCharacteristics)
         {
             var npcs = new Npcs()
             {
-                Name = name,
-                Titles=titles,
-                Health=health,
-                GenderId=genderId,
-                RaceId=raceId,
-                ClassId=classId,
-                FactionId=factionId,
-                StatusId=statusId,
-                ZoneId=zoneId
+                Name = entityCharacteristics[0],
+                Titles = entityCharacteristics[1],
+                Health = int.Parse(entityCharacteristics[2]),
+                GenderId = int.Parse(entityCharacteristics[3]),
+                RaceId = int.Parse(entityCharacteristics[4]),
+                ClassId = int.Parse(entityCharacteristics[5]),
+                FactionId = int.Parse(entityCharacteristics[6]),
+                StatusId = int.Parse(entityCharacteristics[7]),
+                ZoneId = int.Parse(entityCharacteristics[8]),
             };
 
-            this.dbContext.Npcs.Add(npcs);
+            this.DbContext.Npcs.Add(npcs);
+            this.DbContext.SaveChanges();
         }
     }
 }

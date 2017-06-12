@@ -1,9 +1,11 @@
 ﻿using Database;
+using System.Collections.Generic;
+using WoW.CreateCommands.Contracts;
 using WoW_console;
 
 namespace WoW.CreateCommands
 {
-    public class CreateClass
+    public class CreateClass : ICreateEntity
     {
         private readonly IWoWDbContext dbContext;
 
@@ -12,16 +14,25 @@ namespace WoW.CreateCommands
             this.dbContext = dbContext;
         }
 
-        public void GetClass(string className, int resourceId, string lore)
+        public IWoWDbContext DbContext
+        {
+            get
+            {
+                return this.dbContext;
+            }
+        }
+
+        public void CreateEntity(IList<string> entityCharacteristics)
         {
             var entity = new Classes()
             {
-                Name = className,
-                ResourceId = resourceId,
-                Lore = lore
+                Name = entityCharacteristics[0],
+                ResourceId = int.Parse(entityCharacteristics[1]),
+                Lore = entityCharacteristics[2]
             };
 
-            this.dbContext.Classes.Add(entity);
+            this.DbContext.Classes.Add(entity);
+            this.DbContext.SaveChanges();
         }
     }
 }

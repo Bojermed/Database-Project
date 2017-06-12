@@ -1,10 +1,12 @@
 ﻿using Database;
+using System.Collections.Generic;
+using WoW.CreateCommands.Contracts;
 using WoW_console;
 
 namespace WoW.CreateCommands
 {
-    public class CreateFaction
-    {
+    public class CreateFaction : ICreateEntity
+{
         private readonly IWoWDbContext dbContext;
 
         public CreateFaction(IWoWDbContext dbContext)
@@ -12,14 +14,23 @@ namespace WoW.CreateCommands
             this.dbContext = dbContext;
         }
 
-        public void GetFactions(string factionName)
+        public IWoWDbContext DbContext
+        {
+            get
+            {
+                return this.dbContext;
+            }
+        }
+
+        public void CreateEntity(IList<string> entityCharacteristics)
         {
             var entity = new Factions()
             {
-                Name = factionName
+                Name = entityCharacteristics[0]
             };
 
-            this.dbContext.Factions.Add(entity);
+            this.DbContext.Factions.Add(entity);
+            this.DbContext.SaveChanges();
         }
     }
 }

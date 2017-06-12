@@ -18,9 +18,16 @@ namespace WoW_console.Container
             this.Bind<IEntityCreationFactory>().To<EntityCreationFactory>();
             this.Bind<IControllerFactory>().To<ControllerFactory>();
             this.Bind<IWoWDbContext>().To<WoWDbContext>();
+            this.Bind<IPasswordHash>().To<PasswordHash>();
 
-            this.Bind<ICreateEntity>().To<CreatePlanet>().Named("CreatePlanet");
-            //this.Bind<ICreateEntity>().To<CreateCharacter>().Named("CreateCharacter"); for tomorrow
+            this.Bind<IInformational>().To<HomeController>().Named("HomeController");
+            this.Bind<IInformational>().To<HelpController>().Named("HelpController");
+            this.Bind<IRegisterController>().To<RegisterController>();
+            this.Bind<ILoginController>().To<LoginController>();
+            //this.Bind<ICreateEntity>().To<CreateCharacter>().Named("CreateCharacterController"); for tomorrow
+
+            this.Bind<ICreateEntity>().To<CreatePlanet>().WhenInjectedExactlyInto<CreatePlanetController>();
+            this.Bind<ICreateEntity>().To<CreatePlayer>().WhenInjectedExactlyInto<RegisterController>();
 
             this.Bind<ICreationController>().To<CreatePlanetController>().Named("CreatePlanetController");
         }

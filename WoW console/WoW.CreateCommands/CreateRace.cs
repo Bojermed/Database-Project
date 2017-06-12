@@ -1,9 +1,11 @@
 ﻿using Database;
+using System.Collections.Generic;
+using WoW.CreateCommands.Contracts;
 using WoW_console;
 
 namespace WoW.CreateCommands
 {
-    public class CreateRace
+    public class CreateRace : ICreateEntity
     {
         private readonly IWoWDbContext dbContext;
 
@@ -12,18 +14,27 @@ namespace WoW.CreateCommands
             this.dbContext = dbContext;
         }
 
-        public void GetNpcs(string name, string language, string location, string capital, string mount)
+        public IWoWDbContext DbContext
+        {
+            get
+            {
+                return this.dbContext;
+            }
+        }
+
+        public void CreateEntity(IList<string> entityCharacteristics)
         {
             var race = new Races()
             {
-                Name = name,
-                Language = language,
-                Location = location,
-                Capital = capital,
-                Mount = mount
+                Name = entityCharacteristics[0],
+                Language = entityCharacteristics[1],
+                Location = entityCharacteristics[2],
+                Capital = entityCharacteristics[3],
+                Mount = entityCharacteristics[4]
             };
 
-            this.dbContext.Races.Add(race);
+            this.DbContext.Races.Add(race);
+            this.DbContext.SaveChanges();
         }
     }
 }

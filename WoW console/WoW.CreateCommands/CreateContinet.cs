@@ -1,9 +1,11 @@
 ﻿using Database;
+using System.Collections.Generic;
+using WoW.CreateCommands.Contracts;
 using WoW_console;
 
 namespace WoW.CreateCommands
 {
-    public class CreateContinet
+    public class CreateContinet : ICreateEntity
     {
         private readonly IWoWDbContext dbContext;
 
@@ -12,39 +14,24 @@ namespace WoW.CreateCommands
             this.dbContext = dbContext;
         }
 
-        public void GetContinent(string continentName, int planetId)
+        public IWoWDbContext DbContext
+        {
+            get
+            {
+                return this.dbContext;
+            }
+        }
+
+        public void CreateEntity(IList<string> entityCharacteristics)
         {
             var continent = new Continents()
             {
-                Name = continentName,
-                PlanetId = planetId
+                Name = entityCharacteristics[0],
+                PlanetId = int.Parse(entityCharacteristics[1])
             };
 
-            this.dbContext.Continents.Add(continent);
+            this.DbContext.Continents.Add(continent);
+            this.DbContext.SaveChanges();
         }
-
-       //private int FindPlanet(string planetName)
-       //{
-       //    int planetId;
-       //    var planet = dbContext.Planets
-       //        .Where(p => p.Name == planetName)
-       //        .ToList();
-       //
-       //    if (planet!=null)
-       //    {
-       //        planetId = planet[0].Id;
-       //        return planetId;
-       //    }
-       //
-       //    else
-       //    {
-       //        var newPlanet= new CreatePlanet(dbContext);
-       //        newPlanet.GetPlanets(planetName);
-       //        var selectedPlanet = dbContext.Planets
-       //        .Where(p => p.Name == planetName)
-       //        .ToList();
-       //        return selectedPlanet[0].Id;
-       //    }
-       //}
     }
 }

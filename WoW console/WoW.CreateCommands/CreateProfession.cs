@@ -1,9 +1,11 @@
 ﻿using Database;
+using System.Collections.Generic;
+using WoW.CreateCommands.Contracts;
 using WoW_console;
 
 namespace WoW.CreateCommands
 {
-    public class CreateProfession
+    public class CreateProfession : ICreateEntity
     {
         private readonly IWoWDbContext dbContext;
 
@@ -12,15 +14,25 @@ namespace WoW.CreateCommands
             this.dbContext = dbContext;
         }
 
-        public void GetProfession(string professionName, int professionTypeId)
+        public IWoWDbContext DbContext
+        {
+            get
+            {
+                return this.dbContext;
+            }
+        }
+
+        public void CreateEntity(IList<string> entityCharacteristics)
         {
             var profession = new Professions()
             {
-                Name = professionName,
-                ProfessionTypeId = professionTypeId
+                Name = entityCharacteristics[0],
+                ProfessionTypeId = int.Parse(entityCharacteristics[1])
             };
 
-            this.dbContext.Professions.Add(profession);
+            this.DbContext.Professions.Add(profession);
+            this.DbContext.SaveChanges();
+
         }
     }
 }
