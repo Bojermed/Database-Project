@@ -1,6 +1,6 @@
 ﻿namespace WoW_console.Controllers
 {
-    public class CreateCharacterController
+    public class CreateClassController
     {
 
     }
