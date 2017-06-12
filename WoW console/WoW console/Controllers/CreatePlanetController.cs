@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using WoW.CreateCommands;
 using WoW.CreateCommands.Contracts;
 using WoW_console.Contracts;
@@ -15,7 +16,7 @@ namespace WoW_console.Controllers
         private readonly ICreateEntity entityCreator;
         private readonly IReader reader;
         private readonly IWriter writer;
-        private IList<string> entityCharacteristics;
+        private IList<string> entityCharacteristics;        
 
         public CreatePlanetController(ICreateEntity planetCreator, IReader reader, IWriter writer)
         {
@@ -60,18 +61,18 @@ namespace WoW_console.Controllers
 
         public void GuideUser()
         {
-            this.Writer.WriteLine(NAME_PROMPT_MESSAGE);
+            this.Writer.WriteLineInfo(NAME_PROMPT_MESSAGE);
             var planetName = this.Reader.ReadLine();
             EntityCharacteristics.Add(planetName);
 
             try
             {
                 this.EntityCreator.CreateEntity(this.EntityCharacteristics);
-                this.Writer.WriteLine(string.Format(SUCCESSEFUL_CREATION, EntityCharacteristics[0]));
+                this.Writer.WriteLineSuccess(string.Format(SUCCESSEFUL_CREATION, EntityCharacteristics[0]));
             }
             catch(Exception ex)
-            {
-                Writer.WriteLine(UNSUCCESSEFUL_CREATION);
+            {                
+                Writer.WriteLineError(UNSUCCESSEFUL_CREATION);
             }
         }
     }

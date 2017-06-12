@@ -5,21 +5,23 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Xml.Serialization;
-
+using WoW_console;
 
 namespace WoW.LoadFile
 {
     public class ParseData
     {
         private const string RootElement = "Players";
-        private const string FileName = "../../XmlToImport.xml";
+        private const string FileName = "..\\..\\XmlToImport.xml";
 
-        private const string inputFolderPath = "../../WoW.LoadFile";
-        private const string inputPath = "../../WoW.LoadFile/ExtractedFiles";
+        private const string inputFolderPath = "..\\WoW.LoadFile";
+        private const string inputPath = "..\\..\\ExtractedFiles";
 
-        public ParseData()
+        private IWoWDbContext dbContext;
+
+        public ParseData(IWoWDbContext context)
         {
-            
+            this.dbContext = context;
         }
 
         public void ReadFiles()

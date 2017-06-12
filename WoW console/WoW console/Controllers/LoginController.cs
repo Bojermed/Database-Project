@@ -1,6 +1,7 @@
 ﻿using WoW_console.Contracts;
 using System.Linq;
 using System;
+using System.Drawing;
 
 namespace WoW_console.Controllers
 {
@@ -59,10 +60,10 @@ namespace WoW_console.Controllers
 
         public string Login()
         {
-            this.Writer.WriteLine(USERNAME_PROMPT);
+            this.Writer.WriteLineInfo(USERNAME_PROMPT);
             var username = this.Reader.ReadLine();
-            this.Writer.WriteLine(PASSWORD_PROMPT);
-            var password = this.Reader.ReadLine();
+            this.Writer.WriteLineInfo(PASSWORD_PROMPT);
+            var password = this.Reader.ReadLinePassword();
             var hashedPassword = this.Hasher.Hash(username, password);
 
             var dbPassword = "";
@@ -72,18 +73,18 @@ namespace WoW_console.Controllers
             }
             catch(Exception ex)
             {
-                this.Writer.WriteLine(USER_NOT_FOUND);
+                this.Writer.WriteLineError(USER_NOT_FOUND);
                 return "";
             }
 
             if(hashedPassword == dbPassword)
             {
-                this.Writer.WriteLine(string.Format(SUCCESSEFUL_LOGIN, username));
+                this.Writer.WriteLineSuccess(string.Format(SUCCESSEFUL_LOGIN, username));
                 return username;
             }
             else
             {
-                this.Writer.WriteLine(INCORRECT_PASSWORD);
+                this.Writer.WriteLineError(INCORRECT_PASSWORD);
                 return "";
             }
         }
