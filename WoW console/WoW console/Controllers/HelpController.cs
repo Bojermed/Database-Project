@@ -1,4 +1,5 @@
-﻿using WoW_console.Contracts;
+﻿using System.Drawing;
+using WoW_console.Contracts;
 
 namespace WoW_console.Controllers
 {
@@ -29,7 +30,7 @@ Example useage: ""--Create Character"" ";
 
         public void StateMessage()
         {
-            this.Writer.WriteLine(COMMANDS_SUMMARY);
+            this.Writer.WriteLineInfo(COMMANDS_SUMMARY);
         }
     }
 }

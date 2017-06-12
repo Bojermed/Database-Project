@@ -3,5 +3,7 @@
     public interface IReader
     {
         string ReadLine();
+
+        string ReadLinePassword();
     }
 }

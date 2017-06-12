@@ -23,7 +23,7 @@ namespace WoW.LoadFile
                     if (!entry.IsDirectory)
                     {
                         entry.Extract(ExtractFolder);
-                        writer
+                        //writer
                         Console.WriteLine(entry.FileName + " has been extracted");
                     }
                 }

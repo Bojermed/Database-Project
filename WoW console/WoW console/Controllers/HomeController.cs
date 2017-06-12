@@ -43,8 +43,9 @@ or terminate the program.
 
         public void StateMessage()
         {
+            //Console.WriteLine(WELCOME_HEADER,Color.FromName(primaryColor));
             this.Writer.WriteLine(WELCOME_HEADER);
-            this.Writer.WriteLine(COMMAND_INSTRUCTIONS);
+            this.Writer.WriteLineInfo(COMMAND_INSTRUCTIONS);
         }
     }
 }
