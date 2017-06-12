@@ -1,6 +1,7 @@
 ﻿using Ninject;
+using WoW.Exports.Contracts;
+using WoW.LoadFile.Contracts;
 using WoW_console.Contracts;
-using WoW_console.Controllers;
 
 namespace WoW_console.Providers
 {
@@ -33,9 +34,14 @@ namespace WoW_console.Providers
             return this.kernel.Get<ILoginController>();
         }
 
-        public IListCharactersController GetListCharacterController()
+        public IImporter ImportFiles()
         {
-            return this.kernel.Get<IListCharactersController>();
+            return this.kernel.Get<IImporter>();
+        }
+
+        public IPdfExporter ExportFiles()
+        {
+            return this.kernel.Get<IPdfExporter>();
         }
     }
 }

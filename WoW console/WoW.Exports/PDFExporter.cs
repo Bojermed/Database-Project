@@ -2,6 +2,7 @@
 using iTextSharp.text.pdf;
 using System.Collections.Generic;
 using System.IO;
+using WoW.Exports.Contracts;
 using WoW_console;
 
 namespace WoW.Exports

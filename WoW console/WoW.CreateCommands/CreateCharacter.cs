@@ -35,7 +35,6 @@ namespace WoW.CreateCommands
                 ProfessionId = int.Parse(entityCharacteristics[5])
 
             };
-
             this.DbContext.Characters.Add(entity);
             this.DbContext.SaveChanges();
         }

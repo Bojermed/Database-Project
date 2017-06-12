@@ -53,7 +53,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IZipReader.cs" />
+    <Compile Include="CharacterJsonModel.cs" />
+    <Compile Include="Contracts\IImporter.cs" />
+    <Compile Include="Contracts\IZipReader.cs" />
     <Compile Include="PlayersModel.cs" />
     <Compile Include="Importer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

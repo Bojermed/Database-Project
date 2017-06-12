@@ -5,6 +5,8 @@ using WoW_console.Providers;
 using WoW.CreateCommands.Contracts;
 using WoW.CreateCommands;
 using WoW_console.Controllers;
+using WoW.LoadFile;
+using WoW.LoadFile.Contracts;
 
 namespace WoW_console.Container
 {
@@ -29,6 +31,9 @@ namespace WoW_console.Container
             this.Bind<ICreateEntity>().To<CreatePlanet>().WhenInjectedExactlyInto<CreatePlanetController>();
             this.Bind<ICreateEntity>().To<CreatePlayer>().WhenInjectedExactlyInto<RegisterController>();
             this.Bind<ICreateEntity>().To<CreateCharacter>().WhenInjectedExactlyInto<CreateCharacterController>();
+
+            this.Bind<IImporter>().To<Importer>();
+            this.Bind<IZipReader>().To<ZipReader>();
 
             this.Bind<ICreationController>().To<CreatePlanetController>().Named("CreatePlanetController");
             this.Bind<ICreationController>().To<CreateCharacterController>().Named("CreateCharacterController");
