@@ -1,4 +1,6 @@
 ﻿using Ninject;
+using WoW.Exports;
+using WoW.LoadFile;
 using WoW_console.Contracts;
 using WoW_console.Controllers;
 
@@ -31,6 +33,16 @@ namespace WoW_console.Providers
         public ILoginController GetLoginController()
         {
             return this.kernel.Get<ILoginController>();
+        }
+
+        public IImporter ImportFiles()
+        {
+            return this.kernel.Get<IImporter>();
+        }
+
+        public IPdfExporter ExportFiles()
+        {
+            return this.kernel.Get<IPdfExporter>();
         }
     }
 }

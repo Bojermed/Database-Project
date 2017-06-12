@@ -36,8 +36,5 @@ namespace Database
         public virtual Factions Faction { get; set; }
 
         public virtual Professions Profession { get; set; }
-        //public virtual Professions MainProfessionId { get; set; }
-
-        //public virtual Professions SecondaryProfessionId { get; set; }
     }
 }

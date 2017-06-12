@@ -50,7 +50,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CharacterJsonModel.cs" />
     <Compile Include="IPdfExporter.cs" />
     <Compile Include="PDFExporter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

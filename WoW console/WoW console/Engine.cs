@@ -1,4 +1,5 @@
-﻿using WoW_console.Contracts;
+﻿using WoW.Exports;
+using WoW_console.Contracts;
 
 namespace WoW_console
 {
@@ -12,6 +13,7 @@ namespace WoW_console
         private const string LOGEDIN_STATUS = "You are logged in as {0}.";
         private const string LOGEDOUT_STATUS = "You are not logged in yet.";
         private const string LOGOUT_TO_REGISTER = "You must log out before registering a new player.";
+        private const string EXPORT_PATH = "..\\..\\..\\Pdf-Reports";
 
         private readonly IReader reader;
         private readonly IWriter writer;
@@ -82,6 +84,9 @@ namespace WoW_console
 
         public void Start()
         {
+            var importFiles = this.ControllerFactory.ImportFiles();
+            importFiles.DeserializeJSON();
+
             var homeController = this.ControllerFactory.GetInformationalController("HomeController");
             homeController.StateMessage();
 
@@ -160,6 +165,9 @@ namespace WoW_console
                     this.Writer.WriteLine(WRONG_COMMAND);
                 }
             }
+
+            var exportFiles = this.ControllerFactory.ExportFiles();
+            exportFiles.CreatePDFReport(EXPORT_PATH);
         }
     }
 }

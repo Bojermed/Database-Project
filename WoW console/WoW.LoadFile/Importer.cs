@@ -1,57 +1,52 @@
 ﻿using Database;
 using Newtonsoft.Json;
-using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Xml.Serialization;
+using WoW.FileLoader;
 using WoW_console;
+
 
 namespace WoW.LoadFile
 {
-    public class ParseData
+    public class Importer : IImporter
     {
-        private const string RootElement = "Players";
-        private const string FileName = "..\\..\\XmlToImport.xml";
+        private readonly string RootElement = "Characters";
+        private readonly string FileName = "..\\..\\..\\WoW.LoadFile\\ExtractedFiles\\Characters.json";
 
-        private const string inputFolderPath = "..\\WoW.LoadFile";
-        private const string inputPath = "..\\..\\ExtractedFiles";
+        private readonly string inputFolderPath = "..\\..\\..\\WoW.LoadFile\\ExtractedFiles";
+        private readonly string inputPath = "..\\..\\..\\WoW.LoadFile\\ExtractedFiles";
 
         private IWoWDbContext dbContext;
+        //private readonly IWriter writer;
 
-        public ParseData(IWoWDbContext context)
+        public Importer(IWoWDbContext context)
         {
             this.dbContext = context;
         }
 
-        public void ReadFiles()
+        public IEnumerable<Characters> DeserializeJSON()
         {
-            var zipReader = new ZipReader();
-
-            foreach (string file in Directory.EnumerateFiles(inputFolderPath, "*.zip"))
-            {
-                zipReader.ReadZip(file);
-            }
-
-        }
-
-        public IEnumerable<Characters> Deserialize<TModel>()
-        {
-            IEnumerable<Characters> result = null;
-
             if (!File.Exists(FileName))
             {
-                throw new FileNotFoundException("File not found!", FileName);
+                throw new FileNotFoundException("JsonFile not found!", FileName);
             }
-
+;
+            var result = new List<Characters>();
 
             foreach (string file in Directory.EnumerateFiles(inputPath, "*.json"))
             {
                 string parsedJson = File.ReadAllText(file);
 
-                result= JsonConvert.DeserializeObject<IEnumerable<Characters>>(parsedJson).ToList();
+                IEnumerable<CharacterJsonModel> characterJsonModels = JsonConvert.DeserializeObject<IEnumerable<CharacterJsonModel>>(parsedJson).ToList();
 
-                //characters = carJsonModels.Select(Characters.FromJsonModel);
+                var characterJsonModel = new CharacterJsonModel();
+
+                foreach (var item in characterJsonModels)
+                {
+                    result.Add(characterJsonModel.FromJsonModel(item, new WoW_console.WoWDbContext()));
+                }
             }
 
             return result;
@@ -62,7 +57,7 @@ namespace WoW.LoadFile
         {
             if (!File.Exists(FileName))
             {
-                throw new FileNotFoundException("File not found!", FileName);
+                throw new FileNotFoundException("XMLFile not found!", FileName);
             }
             IEnumerable<Characters> result = null;
 

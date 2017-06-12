@@ -1,4 +1,5 @@
-﻿using WoW_console.Contracts;
+﻿using WoW.Exports;
+using WoW.LoadFile;
 
 namespace WoW_console.Contracts
 {
@@ -11,5 +12,9 @@ namespace WoW_console.Contracts
         IRegisterController GetRegistrationController();
 
         ILoginController GetLoginController();
+
+        IImporter ImportFiles();
+
+        IPdfExporter ExportFiles();
     }
 }

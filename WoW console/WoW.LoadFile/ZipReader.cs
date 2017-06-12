@@ -1,12 +1,28 @@
 ﻿using System;
 using System.IO;
 using Ionic.Zip;
+//using WoW_console.Contracts;
 
 namespace WoW.LoadFile
 {
     public class ZipReader : IZipReader
     {
-        private const string ExtractFolder = "..\\..\\ExtractedFiles";
+        private const string ExtractFolder = "..\\..\\WoW.LoadFiles\\ExtractedFiles";
+        //private readonly IWriter writer;
+
+
+        //public ZipReader(IWriter writer)
+        //{
+        //    this.writer = writer;
+        //}
+
+        //public IWriter Writer
+        //{
+        //    get
+        //    {
+        //        return this.writer;
+        //    }
+        //}
 
         public void ReadZip(string Location)
         {
@@ -23,7 +39,7 @@ namespace WoW.LoadFile
                     if (!entry.IsDirectory)
                     {
                         entry.Extract(ExtractFolder);
-                        writer
+                        //writer.WriteLine(entry.FileName + " has been extracted");
                         Console.WriteLine(entry.FileName + " has been extracted");
                     }
                 }

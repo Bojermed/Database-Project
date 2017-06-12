@@ -1,0 +1,297 @@
+[
+   {
+      "Name":"Cockroach",
+      "Player":{
+        "Username": "Atanas65",
+        "Passwordhash": "dafsaffasfa",
+        "Server": "English"
+      },
+      "Race":{
+          "Name": "Orc",
+          "Language": "Orcish",
+          "Location": "Azeroth",
+          "Capital":"Ogrimmar",
+          "Mount": "Wolfhawk"
+      },
+      "Class":{
+        "Name": "Shaman",
+        "Resource": {
+        "Name": "Steel ore"
+        },
+        "Lore": "Shaman are spiritual guides and practitioners, not of the divine, but of the very elements. Unlike some other mystics, shaman commune with forces that are not strictly benevolent. The elements are chaotic, and left to their own devices, they rage against one another in unending primal fury. It is the call of the shaman to bring balance to this chaos. Acting as moderators among earth, fire, water, and air, shaman summon totems that focus the elements to support the shaman’s allies or punish those who threaten them. "
+        },
+      "Faction":{
+        "Name": "Horde"
+      },
+      "Profession": {
+        "Name": "Blacksmithing"
+      }
+      
+   },
+   {
+      "Name":"Mantis",
+      "Player":{
+        "Username": "Atanas65",
+        "Passwordhash": "dafsaffasfa",
+        "Server": "English"
+      },
+      "Race":{
+          "Name": "Blood elf",
+          "Language": "Thalassian",
+          "Location": "Sunstrider Isle",
+          "Capital":"Silvermoon City",
+          "Mount": "Phoenix"
+      },
+      "Class":{
+        "Name": "Mage",
+        "Resource": {
+        "Name": "Fish"
+        },
+        "Lore": "Students gifted with a keen intellect and unwavering discipline may walk the path of the Mage. The arcane magic available to magi is both great and dangerous, and thus is revealed only to the most devoted practitioners. To avoid interference with their spellcasting, magi wear only cloth armor, but arcane shields and enchantments give them additional protection. To keep enemies at bay, magi can summon bursts of fire to incinerate distant targets and cause entire areas to erupt, setting groups of foes ablaze."
+      },
+      "Faction":{
+        "Name": "Horde"
+      },
+      "Profession": {
+        "Name": "Enchanting"
+      }  
+   },
+   {
+      "Name":"Ladybug",
+      "Player":{
+        "Username": "Atanas65",
+        "Passwordhash": "dafsaffasfa",
+        "Server": "English"
+      },
+      "Race":{
+          "Name": "Troll",
+          "Language": "Amani",
+          "Location": "Azeroth",
+          "Capital":"Ogrimmar",
+          "Mount": "Dire Wolfhawk"
+      },
+      "Class":{
+        "Name": "Rogue",
+        "Resource": {
+        "Name": "Enemy blood"
+        },
+        "Lore": "For rogues, the only code is the contract, and their honor is purchased in gold. Free from the constraints of a conscience, these mercenaries rely on brutal and efficient tactics. Lethal assassins and masters of stealth, they will approach their marks from behind, piercing a vital organ and vanishing into the shadows before the victim hits the ground"
+      },
+      "Faction":{
+        "Name": "Horde"
+      },
+      "Profession": {
+        "Name": "Alchemy"
+      }      
+   },
+   {
+      "Name":"CykaBlyat",
+      "Player":{
+        "Username": "Alexander",
+        "Passwordhash": "123456",
+        "Server": "Bulgarian"
+      },
+      "Race":{
+          "Name": "Night Elf",
+          "Language": "Darnassian",
+          "Location": "Azeroth",
+          "Capital":"Darnassus",
+          "Mount": "Saber cat"
+      },
+      "Class":{
+        "Name": "Rogue",
+        "Resource": {
+        "Name": "Clay"
+        },
+        "Lore": "For rogues, the only code is the contract, and their honor is purchased in gold. Free from the constraints of a conscience, these mercenaries rely on brutal and efficient tactics. Lethal assassins and masters of stealth, they will approach their marks from behind, piercing a vital organ and vanishing into the shadows before the victim hits the ground"
+      },
+      "Faction":{
+        "Name": "Horde"
+      },
+      "Profession": {
+        "Name": "Herbalism"
+      }  
+   },
+   {
+    "Name":"PutinTrump",
+     "Player":{
+        "Username": "Alexander",
+        "Passwordhash": "123456",
+        "Server": "Bulgarian"
+      },
+      "Race":{
+          "Name": "Gnome",
+          "Language": "Gnome",
+          "Location": "Azeroth",
+          "Capital":"Gnomeregan",
+          "Mount": "Mechanostrider"
+      },
+      "Class":{
+        "Name": "Monk",
+        "Resource": {
+        "Name": "Fish"
+        },
+        "Lore": "When the pandaren were subjugated by the mogu centuries ago, it was the monks that brought hope to a seemingly dim future. Restricted from using weapons by their slave masters, these pandaren instead focused on harnessing their chi and learning weaponless combat. When the opportunity for revolution struck, they were well-trained to throw off the yoke of oppression"
+      },
+      "Faction":{
+        "Name": "Alliance"
+      },
+      "Profession": {
+        "Name": "Herbalism"
+      }   
+   },
+   {
+      "Name":"Kalashnikov",
+      "Player":{
+        "Username": "Alexander",
+        "Passwordhash": "123456",
+        "Server": "Bulgarian"
+      },
+      "Race":{
+          "Name": "Dwarf",
+          "Language": "Dwarven",
+          "Location": "Azeroth",
+          "Capital":"Ironforge",
+          "Mount": "Ram"
+      },
+      "Class":{
+        "Name": "Paladin",
+        "Resource": {
+        "Name": "Sword"
+        },
+        "Lore": "This is the call of the paladin: to protect the weak, to bring justice to the unjust, and to vanquish evil from the darkest corners of the world. These holy warriors are equipped with plate armor so they can confront the toughest of foes, and the blessing of the Light allows them to heal wounds and, in some cases, even restore life to the dead. "
+      },
+      "Faction":{
+        "Name": "Alliance"
+      },
+      "Profession": {
+        "Name": "Leathercrafting"
+      }    
+   },
+   {
+      "Name":"Draeneiche",
+      "Player":{
+        "Username": "Daren",
+        "Passwordhash": "12443456",
+        "Server": "Bulgarian"
+      },
+      "Race":{
+          "Name": "Draenei",
+          "Language": "Draenei",
+          "Location": "Exodar",
+          "Capital":"Exodar",
+          "Mount": "Ram"
+      },
+      "Class":{
+        "Name": "Hunter",
+        "Resource": {
+        "Name": "Bow"
+        },
+        "Lore": "From an early age the call of the wild draws some adventurers from the comfort of their homes into the unforgiving primal world outside. Those who endure become hunters. Masters of their environment, they are able to slip like ghosts through the trees and lay traps in the paths of their enemies.  "
+      },
+      "Faction":{
+        "Name": "Alliance"
+      },
+      "Profession": {
+        "Name": "Tailoring"
+      }     
+   },
+   {
+      "Name":"TaurenTank",
+      "Player":{
+        "Username": "Taurus",
+        "Passwordhash": "fbfbgqej",
+        "Server": "German"
+      },
+      "Race":{
+          "Name": "Tauren",
+          "Language": "Taur-ahe",
+          "Location": "Draenor",
+          "Capital":"Thunder Bluff",
+          "Mount": "Kodo"
+      },
+      "Class":{
+        "Name": "Hunter",
+        "Resource": {
+        "Name": "Grain fields"
+        },
+        "Lore": "From an early age the call of the wild draws some adventurers from the comfort of their homes into the unforgiving primal world outside. Those who endure become hunters. Masters of their environment, they are able to slip like ghosts through the trees and lay traps in the paths of their enemies.  "
+      },
+      "Faction":{
+        "Name": "Horde"
+      },
+      "Profession": {
+        "Name": "Herbalism"
+      }  
+   },
+   {
+      "Name":"Umrelqk",
+      "Player":{
+        "Username": "Taurus",
+        "Passwordhash": "fbfbgqej",
+        "Server": "German"
+      },
+      "Race":{
+          "Name": "Forsaken",
+          "Language": "Gutterspeak",
+          "Location": "Azeroth",
+          "Capital":"Undercity",
+          "Mount": "Skeletal Horse"
+      },
+      "Class":{
+        "Name": "Hunter",
+        "Resource": {
+        "Name": "Grain fields"
+        },
+        "Lore": "From an early age the call of the wild draws some adventurers from the comfort of their homes into the unforgiving primal world outside. Those who endure become hunters. Masters of their environment, they are able to slip like ghosts through the trees and lay traps in the paths of their enemies.  "
+      },
+      "Faction":{
+        "Name": "Horde"
+      },
+      "Profession": {
+        "Name": "Archeology"
+      }  
+   },
+   {
+      "Name":"PandaPanda",
+      "Player":{
+        "Username": "Panda",
+        "Passwordhash": "typapanda",
+        "Server": "German"
+      },
+      "Race":{
+          "Name": "Pandaren",
+          "Language": "Pandaren",
+          "Location": "Azeroth",
+          "Capital":" Shrine of Two Moons ",
+          "Mount": "Dragon turtle"
+      },
+      "Class":{
+        "Name": "Warrior",
+        "Resource": {
+        "Name": "Steel"
+        },
+        "Lore": "For as long as war has raged, heroes from every race have aimed to master the art of battle. Warriors combine strength, leadership, and a vast knowledge of arms and armor to wreak havoc in glorious combat. "
+      },
+      "Faction":{
+        "Name": "Alliance"
+      },
+      "Profession": {
+        "Name": "Archeology"
+      }   
+   }
+]
+
+
+
+
+// [
+//     {
+//       "Name":"Pandaren",
+//       "PlayerId":1,
+//       "RaceId":1,
+//       "ClassId":1,
+//       "FactionId":2,
+//       "ProfessionId": 1   
+//     }   
+// ]
