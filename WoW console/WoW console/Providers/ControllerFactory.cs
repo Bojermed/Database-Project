@@ -1,8 +1,7 @@
 ﻿using Ninject;
-using WoW.Exports;
-using WoW.LoadFile;
+using WoW.Exports.Contracts;
+using WoW.LoadFile.Contracts;
 using WoW_console.Contracts;
-using WoW_console.Controllers;
 
 namespace WoW_console.Providers
 {

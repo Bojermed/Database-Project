@@ -6,6 +6,7 @@ using WoW.CreateCommands.Contracts;
 using WoW.CreateCommands;
 using WoW_console.Controllers;
 using WoW.LoadFile;
+using WoW.LoadFile.Contracts;
 
 namespace WoW_console.Container
 {

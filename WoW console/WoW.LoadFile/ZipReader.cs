@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using Ionic.Zip;
+using WoW.LoadFile.Contracts;
 //using WoW_console.Contracts;
 
 namespace WoW.LoadFile

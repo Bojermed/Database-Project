@@ -1,4 +1,4 @@
-﻿namespace WoW.Exports
+﻿namespace WoW.Exports.Contracts
 {
     public interface IPdfExporter
     {

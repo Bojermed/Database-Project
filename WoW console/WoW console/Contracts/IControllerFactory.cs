@@ -1,5 +1,6 @@
 ﻿using WoW.Exports;
-using WoW.LoadFile;
+using WoW.Exports.Contracts;
+using WoW.LoadFile.Contracts;
 
 namespace WoW_console.Contracts
 {

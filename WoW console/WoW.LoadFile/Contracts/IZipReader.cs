@@ -1,4 +1,4 @@
-﻿namespace WoW.LoadFile
+﻿namespace WoW.LoadFile.Contracts
 {
     public interface IZipReader
     {

@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Xml.Serialization;
 using WoW.FileLoader;
+using WoW.LoadFile.Contracts;
 using WoW_console;
 
 

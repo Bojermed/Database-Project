@@ -50,7 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IPdfExporter.cs" />
+    <Compile Include="Contracts\IPdfExporter.cs" />
     <Compile Include="PDFExporter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
