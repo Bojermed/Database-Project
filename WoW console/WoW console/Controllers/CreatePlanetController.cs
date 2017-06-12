@@ -59,7 +59,7 @@ namespace WoW_console.Controllers
             }
         }
 
-        public void GuideUser()
+        public void GuideUser(string username)
         {
             this.Writer.WriteLineInfo(NAME_PROMPT_MESSAGE);
             var planetName = this.Reader.ReadLine();

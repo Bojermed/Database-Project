@@ -50,12 +50,15 @@ namespace WoWDbContext.Migrations
                     {
                         Id = c.Int(nullable: false, identity: true),
                         Name = c.String(nullable: false, maxLength: 20),
+                        FactionId = c.Int(nullable: true),
                         Language = c.String(maxLength: 20),
                         Location = c.String(storeType: "ntext"),
                         Capital = c.String(maxLength: 20),
                         Mount = c.String(maxLength: 20),
                     })
-                .PrimaryKey(t => t.Id);
+                .PrimaryKey(t => t.Id)
+                .ForeignKey("dbo.Factions", t => t.FactionId, cascadeDelete: false)
+                .Index(t => t.FactionId);
             
             CreateTable(
                 "dbo.Npcs",

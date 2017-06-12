@@ -1,5 +1,6 @@
 ﻿using Database;
 using System.Collections.Generic;
+using System.Linq;
 using WoW.CreateCommands.Contracts;
 using WoW_console;
 

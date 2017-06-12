@@ -101,17 +101,18 @@ namespace WoW_console
                     var helpController = this.ControllerFactory.GetInformationalController("HelpController");
                     helpController.StateMessage();
                 }
-                else if (userInput[0] == "--create")
+                else if (userInput[0] == "--create" && this.LoggedIn)
                 {
-                    if (userInput[1] == "planet")
+                    if (userInput[1] == "character")
                     {
-                        var planetCreator = this.ControllerFactory.GetController("CreatePlanetController");
-                        planetCreator.GuideUser();
+                        var characterCreator = this.ControllerFactory.GetController("CreateCharacterController");
+                        characterCreator.GuideUser(this.currentUsername);
                     }
-                    else if (userInput[1] == "character")
-                    {
-                        // implement character creation
-                    }
+                }
+                else if (userInput[0] == "--list-characters" && this.LoggedIn)
+                {
+                    var listController = this.ControllerFactory.GetListCharacterController();
+                    listController.ListCharacters(this.CurrentUsername);
                 }
                 else if (userInput[0] == "--register" && !this.LoggedIn)
                 {

@@ -8,10 +8,13 @@ namespace Database
 
         private ICollection<Characters> characters;
 
+        private ICollection<Races> races;
+
         public Factions()
         {
             this.npcs = new HashSet<Npcs>();
             this.characters = new HashSet<Characters>();
+            this.races = new HashSet<Races>();
         }
 
         public int Id { get; set; }
@@ -31,5 +34,12 @@ namespace Database
             get { return this.characters; }
             set { this.characters = value; }
         }
+
+        public virtual ICollection<Races> Races
+        {
+            get { return this.races; }
+            set { this.races = value; }
+        }
+
     }
 }

@@ -75,6 +75,8 @@
     <Compile Include="Contracts\IHomeController.cs" />
     <Compile Include="Contracts\IRegisterController.cs" />
     <Compile Include="Contracts\ILoginController.cs" />
+    <Compile Include="Contracts\IListCharactersController.cs" />
+    <Compile Include="Controllers\ListCharactersController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\RegisterController.cs" />
     <Compile Include="Engine.cs" />

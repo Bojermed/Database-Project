@@ -32,5 +32,10 @@ namespace WoW_console.Providers
         {
             return this.kernel.Get<ILoginController>();
         }
+
+        public IListCharactersController GetListCharacterController()
+        {
+            return this.kernel.Get<IListCharactersController>();
+        }
     }
 }

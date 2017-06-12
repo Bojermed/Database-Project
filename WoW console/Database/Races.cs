@@ -14,11 +14,14 @@ namespace Database
             this.npcs = new HashSet<Npcs>();
             this.classes = new HashSet<Classes>();
         }
+
         public int Id { get; set; }
 
         [MaxLength(20)]
         [Required]
         public string Name { get; set; }
+
+        public int FactionId { get; set; }
 
         [MaxLength(20)]
         public string Language { get; set; }
@@ -31,6 +34,8 @@ namespace Database
 
         [MaxLength(20)]
         public string Mount { get; set; }
+
+        public virtual Factions Faction { get; set; }
 
         public virtual ICollection<Classes> Classes
         {

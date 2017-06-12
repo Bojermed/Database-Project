@@ -11,5 +11,7 @@ namespace WoW_console.Contracts
         IRegisterController GetRegistrationController();
 
         ILoginController GetLoginController();
+
+        IListCharactersController GetListCharacterController();
     }
 }

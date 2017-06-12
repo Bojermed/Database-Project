@@ -40,6 +40,13 @@ namespace WoW_console
         public virtual IDbSet<Statuses> Statuses { get; set; }
 
         public virtual IDbSet<Zones> Zones { get; set; }
-        
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Races>().Property(p => p.FactionId).IsOptional();
+
+            base.OnModelCreating(modelBuilder);
+        }
+
     }
 }

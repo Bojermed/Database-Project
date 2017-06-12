@@ -14,6 +14,6 @@ namespace WoW_console.Contracts
 
         IWriter Writer { get; }
 
-        void GuideUser();
+        void GuideUser(string username);
     }
 }

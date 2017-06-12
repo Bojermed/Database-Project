@@ -19,6 +19,21 @@ namespace WoW_console
             engine.Start();
 
             //var dbContext = new WoWDbContext();
+            //var result = dbContext.Races.Where(r => r.Id == 1).FirstOrDefault().Classes.ToList().Select(p => p.Name);
+            //foreach (var r in result)
+            //{
+            //    Console.WriteLine(r);
+            //}
+
+
+            //hordeRacesInGame  = new List<string> { "Draenei", "Dwarf", "Gnome", "Human", "Night elf", "Pandaren", "Worgen",
+            //                                     "Blood elf", "Forsaken", "Goblin","Orc", "Pandaren", "Tauren", "Troll" };
+
+            //var DbContext = new WoWDbContext();
+            //var result = DbContext.Players.Where(p => p.Username == "Ivan").FirstOrDefault().Id;
+            //Console.WriteLine(result);
+
+            //var dbContext = new WoWDbContext();
             //var planet = new Planets()
             //{
             //    Name = "Outlands"

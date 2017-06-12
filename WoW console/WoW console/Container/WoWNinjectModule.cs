@@ -24,12 +24,15 @@ namespace WoW_console.Container
             this.Bind<IInformational>().To<HelpController>().Named("HelpController");
             this.Bind<IRegisterController>().To<RegisterController>();
             this.Bind<ILoginController>().To<LoginController>();
-            //this.Bind<ICreateEntity>().To<CreateCharacter>().Named("CreateCharacterController"); for tomorrow
+            this.Bind<IListCharactersController>().To<ListCharactersController>();
 
             this.Bind<ICreateEntity>().To<CreatePlanet>().WhenInjectedExactlyInto<CreatePlanetController>();
             this.Bind<ICreateEntity>().To<CreatePlayer>().WhenInjectedExactlyInto<RegisterController>();
+            this.Bind<ICreateEntity>().To<CreateCharacter>().WhenInjectedExactlyInto<CreateCharacterController>();
 
             this.Bind<ICreationController>().To<CreatePlanetController>().Named("CreatePlanetController");
+            this.Bind<ICreationController>().To<CreateCharacterController>().Named("CreateCharacterController");
+
         }
     }
 }

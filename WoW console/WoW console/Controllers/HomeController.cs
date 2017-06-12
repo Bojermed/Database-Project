@@ -20,7 +20,7 @@ AZEROTH.
             ";
 
         private const string COMMAND_INSTRUCTIONS = @"--------------
-Enther command
+Enter command
 --Login
 --Register
 --Help
