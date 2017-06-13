@@ -1,5 +1,4 @@
-﻿using System.Drawing;
-using WoW_console.Contracts;
+﻿using WoW_console.Contracts;
 
 namespace WoW_console.Controllers
 {

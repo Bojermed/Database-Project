@@ -24,7 +24,6 @@ namespace Database
         [Column(TypeName = "ntext")]
         public string Lore { get; set; }
 
-        [Required]
         public virtual Resources Resource { get; set; }
 
         public virtual ICollection<Races> Races

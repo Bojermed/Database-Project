@@ -1,4 +1,4 @@
-﻿using WoW.Exports;
+﻿using System.Linq;
 using WoW_console.Contracts;
 
 namespace WoW_console
@@ -18,15 +18,17 @@ namespace WoW_console
         private readonly IReader reader;
         private readonly IWriter writer;
         private readonly IControllerFactory controllerFactory;
+        private readonly IWoWDbContext dbContext;
 
         private bool loggedIn;
         private string currentUsername;
 
-        public Engine(IReader reader, IWriter writer, IControllerFactory controllerFactory)
+        public Engine(IReader reader, IWriter writer, IControllerFactory controllerFactory, IWoWDbContext dbContext)
         {
             this.reader = reader;
             this.writer = writer;
             this.controllerFactory = controllerFactory;
+            this.dbContext = dbContext;
 
             this.LoggedIn = false;
             this.CurrentUsername = "";
@@ -53,6 +55,14 @@ namespace WoW_console
             get
             {
                 return this.controllerFactory;
+            }
+        }
+
+        public IWoWDbContext DbContext
+        {
+            get
+            {
+                return this.dbContext;
             }
         }
 
@@ -84,8 +94,8 @@ namespace WoW_console
 
         public void Start()
         {
-            var importFiles = this.ControllerFactory.ImportFiles();
-            importFiles.DeserializeJSON();
+            var fileImporter = this.ControllerFactory.ImportFiles();
+            fileImporter.SeedDatabase();
 
             var homeController = this.ControllerFactory.GetInformationalController("HomeController");
             homeController.StateMessage();
@@ -167,8 +177,8 @@ namespace WoW_console
                 }
             }
 
-            var exportFiles = this.ControllerFactory.ExportFiles();
-            exportFiles.CreatePDFReport(EXPORT_PATH);
+            //var exportFiles = this.ControllerFactory.ExportFiles();
+            //exportFiles.CreatePDFReport(EXPORT_PATH);
         }
     }
 }

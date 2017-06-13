@@ -54,11 +54,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CharacterJsonModel.cs" />
+    <Compile Include="ClassesJsonModel.cs" />
     <Compile Include="Contracts\IImporter.cs" />
     <Compile Include="Contracts\IZipReader.cs" />
     <Compile Include="PlayersModel.cs" />
     <Compile Include="Importer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RacesJsonModel.cs" />
     <Compile Include="ZipReader.cs" />
   </ItemGroup>
   <ItemGroup>

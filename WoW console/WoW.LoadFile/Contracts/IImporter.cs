@@ -5,9 +5,6 @@ namespace WoW.LoadFile.Contracts
 {
     public interface IImporter
     {
-        IEnumerable<Characters> DeserializeJSON();
-
-        IEnumerable<Characters> DeserializeXML();
-
+        void SeedDatabase();
     }
 }

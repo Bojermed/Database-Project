@@ -1,0 +1,98 @@
+[
+    {
+        "Name":"Draenei",
+        "FactionId":"1",
+        "Language":"Draenei",
+        "Capital":"Exodar",
+        "Mount":"Elekk",
+        "Classes": ["Hunter", "Mage", "Paladin", "Priest", "Shaman", "Warrior", "Death Knight"]
+    },
+    {
+        "Name":"Dwarf",
+        "FactionId":"1",
+        "Language":"Dwarven",
+        "Capital":"Ironforge",
+        "Mount":"Ram",
+        "Classes": ["Hunter", "Paladin", "Priest", "Rogue", "Warrior", "Death Knight", "Mage", "Shaman", "Warlock"]
+    },
+    {
+        "Name":"Gnome",
+        "FactionId":"1",
+        "Language":"Gnomish",
+        "Capital":"Gnomergan",
+        "Mount":"Mechanostrider",
+        "Classes": ["Mage", "Rogue", "Warlock", "Warrior", "Death Knight", "Priest", "Hunter"]
+    },
+    {
+        "Name":"Human",
+        "FactionId":"1",
+        "Language":"Common",
+        "Capital":"Stormwind",
+        "Mount":"Horse",
+        "Classes": ["Mage", "Paladin", "Priest", "Rogue", "Warlock", "Warrior", "Death Knight", "Hunter"]
+    },
+    {
+        "Name":"Night Elf",
+        "FactionId":"1",
+        "Language":"Darnassian",
+        "Capital":"Darnassus",
+        "Mount":"Saber cat",
+        "Classes": ["Druid", "Hunter", "Priest", "Rogue", "Warrior", "Death Knight", "Mage", "Demon Hunter"]
+    },
+    {
+        "Name":"Wrogen",
+        "FactionId":"1",
+        "Language":"Gilnean",
+        "Capital":"Gilneas",
+        "Mount":"None",
+        "Classes": ["Death Knight", "Demon Hunter", "Druid", "Hunter", "Mage", "Priest", "Rogue", "Warlock", "Warrior"]
+    },
+    {
+        "Name":"Blood Elf",
+        "FactionId":"2",
+        "Language":"Thalassian",
+        "Capital":"Silvermoon City",
+        "Mount":"Hawkstrider",
+        "Classes": ["Death Knight", "Druid", "Hunter", "Mage", "Priest", "Rogue", "Warlock", "Warrior"]
+    },
+    {
+        "Name":"Forsaken",
+        "FactionId":"2",
+        "Language":"Gutterspeak",
+        "Capital":"Undercity",
+        "Mount":"Skeletal Horse",
+        "Classes": ["Mage", "Priest", "Rogue", "Warlock", "Warrior", "Death Knight", "Hunter"]
+    },
+    {
+        "Name":"Goblin",
+        "FactionId":"2",
+        "Language":"Goblin",
+        "Capital":"Bilgewater Harbor",
+        "Mount":"Trike",
+        "Classes": ["Death Knight", "Hunter", "Mage", "Priest", "Rogue", "Shaman", "Warlock", "Warrior"]
+    },
+    {
+        "Name":"Orc",
+        "FactionId":"2",
+        "Language":"Orcish",
+        "Capital":"Orgrimmar",
+        "Mount":"Wolf",
+        "Classes": ["Hunter", "Rogue", "Shaman", "Warlock", "Warrior", "Death Knight", "Mage"]
+    },
+    {
+        "Name":"Tauren",
+        "FactionId":"2",
+        "Language":"Taur-ahe",
+        "Capital":"Thunder Bluff",
+        "Mount":"Kodo",
+        "Classes": ["Druid", "Hunter", "Shaman", "Warrior", "Death Knight", "Paladin", "Priest"]
+    },
+    {
+        "Name":"Troll",
+        "FactionId":"2",
+        "Language":"Zandali",
+        "Capital":"Darkspear",
+        "Mount":"Raptor",
+        "Classes": ["Hunter", "Mage", "Priest", "Rogue", "Shaman", "Warrior", "Death Knight", "Druid", "Warlock"]
+    }
+]

@@ -20,12 +20,49 @@ namespace WoW_console
             var kernel = new StandardKernel(new WoWNinjectModule());
             var engine = kernel.Get<Engine>();
             engine.Start();
+
+            //var dbContext = new WoWDbContext();
+            //var importer = new Importer(dbContext);
+            //importer.ResourcesDeserializeJSON();
+            ////importer.ProfessionsDeserializeJSON();
+            ////importer.FactionsDeserializeJSON();
+            ////importer.RacesDeserializeJSON();
+            //importer.ClassesDeserializeJSON();
+            //importer.ConnectRacesClassesDeserializeJSON();
+            //var classRaces = new List<Races>();
+            //var newRace = new Races()
+            //{
+            //    Name = "Izvanzemno"
+            //};
+            //classRaces.Add(newRace);
+
+            //var newClass = new Classes()
+            //{
+            //    Name = "Stefan",
+            //    ResourceId = 1,
+            //    Lore = "Rodil se bil",
+            //    //Races = classRaces
+            //};
+            //dbContext.Classes.Add(newClass);
+            //dbContext.SaveChanges();
+
+            //var dbContext = new WoWDbContext();
+            //var importer = new Importer(dbContext);
+            //importer.ResourcesDeserializeJSON();
+            //var classCreator = new CreateClass(dbContext);
+            //var param = new List<string>()
+            //{
+            //    "Stefan",
+            //    "1",
+            //    "istoriq"
+            //};
+            //classCreator.CreateEntity(param);
         }
 
         //public static void GetPDFReport()
         //{
         //    var context = new WoWDbContext();
-            
+
         //    var pdf = new PdfExporter(context);
         //    pdf.CreatePDFReport("..\\..\\Pdf-Reports");
         //}

@@ -1,0 +1,77 @@
+[
+    {
+        "Name": "Death Knight",
+        "ResourceId": "4",
+        "Lore": "The Lich King created them.",
+        "Races": ["Draenei", "Dwarf", "Gnome", "Human", "Night Elf", "Worgen",
+         "Blood Elf", "Forasken", "Goblin", "Orc", "Tauren", "Troll"]
+    },
+    {
+        "Name": "Demon Hunter",
+        "ResourceId": "3",
+        "Lore": "They serve Illidan.",
+        "Races": ["Night Elf", "Blood Elf"]
+    },
+    {
+        "Name": "Druid",
+        "ResourceId": "1",
+        "Lore": "They love nature.",
+        "Races": ["Night Elf", "Worgen", "Tauren", "Troll"]
+    },
+    {
+        "Name": "Hunter",
+        "ResourceId": "1",
+        "Lore": "They love their pets.",
+        "Races": ["Draenei", "Dwarf", "Gnome", "Human", "Night Elf", "Worgen",
+         "Blood Elf", "Forasken", "Goblin", "Orc", "Tauren", "Troll"]
+    },
+    {
+        "Name": "Mage",
+        "ResourceId": "1",
+        "Lore": "Jaina is the best of them.",
+        "Races": ["Draenei", "Dwarf", "Gnome", "Human", "Night Elf", "Worgen",
+         "Blood Elf", "Forasken", "Goblin", "Orc", "Troll"]
+    },
+    {
+        "Name": "Paladin",
+        "ResourceId": "1",
+        "Lore": "They serve the ligh.",
+        "Races": ["Draenei", "Dwarf", "Human",
+         "Blood Elf", "Tauren"]
+    },
+    {
+        "Name": "Priest",
+        "ResourceId": "1",
+        "Lore": "Anduin left them.",
+        "Races": ["Draenei", "Dwarf", "Gnome", "Human", "Night Elf", "Worgen",
+         "Blood Elf", "Forasken", "Goblin", "Tauren", "Troll"]
+    },
+    {
+        "Name": "Rogue",
+        "ResourceId": "2",
+        "Lore": "Valeera best waifu.",
+        "Races": ["Dwarf", "Gnome", "Human", "Night Elf", "Worgen",
+         "Blood Elf", "Forasken", "Goblin", "Orc", "Troll"]
+    },
+    {
+        "Name": "Shaman",
+        "ResourceId": "1",
+        "Lore": "Totems they like. Elements they love.",
+        "Races": ["Draenei", "Dwarf",
+        "Goblin", "Orc", "Tauren", "Troll"]
+    },
+    {
+        "Name": "Warlock",
+        "ResourceId": "1",
+        "Lore": "A pretty nasty bunch.",
+        "Races": ["Dwarf", "Gnome", "Human", "Worgen",
+         "Blood Elf", "Forasken", "Goblin", "Orc", "Troll"]
+    },
+    {
+        "Name": "Warrior",
+        "ResourceId": "3",
+        "Lore": "A lot of muscle.",
+        "Races": ["Draenei", "Dwarf", "Gnome", "Human", "Night Elf", "Worgen",
+         "Blood Elf", "Forasken", "Goblin", "Orc", "Tauren", "Troll"]
+    }    
+]
