@@ -7,6 +7,8 @@ using WoW.CreateCommands;
 using WoW_console.Controllers;
 using WoW.LoadFile;
 using WoW.LoadFile.Contracts;
+using WoW.Exports.Contracts;
+using WoW.Exports;
 
 namespace WoW_console.Container
 {
@@ -34,6 +36,7 @@ namespace WoW_console.Container
 
             this.Bind<IImporter>().To<Importer>();
             this.Bind<IZipReader>().To<ZipReader>();
+            this.Bind<IPdfExporter>().To<PdfExporter>();
 
             this.Bind<ICreationController>().To<CreatePlanetController>().Named("CreatePlanetController");
             this.Bind<ICreationController>().To<CreateCharacterController>().Named("CreateCharacterController");

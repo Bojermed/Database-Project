@@ -177,8 +177,8 @@ namespace WoW_console
                 }
             }
 
-            //var exportFiles = this.ControllerFactory.ExportFiles();
-            //exportFiles.CreatePDFReport(EXPORT_PATH);
+            var exportFiles = this.ControllerFactory.ExportFiles();
+            exportFiles.CreatePDFReport(EXPORT_PATH);
         }
     }
 }

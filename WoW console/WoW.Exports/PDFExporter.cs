@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.IO;
 using WoW.Exports.Contracts;
 using WoW_console;
+using System.Linq;
 
 namespace WoW.Exports
 {
@@ -49,7 +50,8 @@ namespace WoW.Exports
 
                 var charactersWins = 0;
                 var charactersLoses = 0;
-                foreach (var character in this.dbContext.Characters)
+                var dbCharacters = this.dbContext.Characters.ToList();
+                foreach (var character in dbCharacters)
                 {
                     var characterName = new PdfPCell();
                     var characterPlayer = new PdfPCell();
