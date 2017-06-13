@@ -1,0 +1,30 @@
+[
+    {
+        "Name": "Sofia",
+        "CountriesId": "1"
+    },
+    {
+        "Name": "Plovdiv",
+        "CountriesId": "1"
+    },
+    {
+        "Name": "Varna",
+        "CountriesId": "1"
+    },
+    {
+        "Name": "Burgas",
+        "CountriesId": "1"
+    },
+    {
+        "Name": "London",
+        "CountriesId": "2"
+    },
+    {
+       "Name": "New York",
+        "Country": "3"
+    },
+    {
+       "Name": "Los Angeles",
+        "Country": "3"
+    }   
+]

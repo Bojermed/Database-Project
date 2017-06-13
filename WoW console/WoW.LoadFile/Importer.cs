@@ -4,7 +4,9 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using WoW.LoadFile.Contracts;
+using WoWPostgreData;
 using WoW_console;
+using WoW_Postgre.Models;
 
 
 namespace WoW.LoadFile
@@ -16,12 +18,20 @@ namespace WoW.LoadFile
         private readonly string professionsFile = "..\\..\\..\\WoW.LoadFile\\ExtractedFiles\\Professions.json";
         private readonly string classesFile = "..\\..\\..\\WoW.LoadFile\\ExtractedFiles\\Classes.json";
         private readonly string racesFile = "..\\..\\..\\WoW.LoadFile\\ExtractedFiles\\Races.json";
+        private readonly string countriesFile = "..\\..\\..\\WoW.LoadFile\\ExtractedFiles\\Countries.json";
+        private readonly string citiesFile = "..\\..\\..\\WoW.LoadFile\\ExtractedFiles\\Cities.json";
 
         private readonly IWoWDbContext dbContext;
+        private readonly IWoWDbPostgreContext dbPostgreContext;
 
         public Importer(IWoWDbContext context)
         {
             this.dbContext = context;
+        }
+
+        public Importer(IWoWDbPostgreContext context)
+        {
+            this.dbPostgreContext = context;
         }
 
         public IWoWDbContext DbContext
@@ -29,6 +39,14 @@ namespace WoW.LoadFile
             get
             {
                 return this.dbContext;
+            }
+        }
+
+        public IWoWDbPostgreContext DbPostgreContext
+        {
+            get
+            {
+                return this.dbPostgreContext;
             }
         }
 
@@ -176,6 +194,53 @@ namespace WoW.LoadFile
             this.DbContext.SaveChanges();
         }
 
+        private void CountriesDeserializeJSON()
+        {
+            if (!File.Exists(countriesFile))
+            {
+                throw new FileNotFoundException("JsonFile not found!", countriesFile);
+            }
+
+            string parsedJson = File.ReadAllText(countriesFile);
+
+            IEnumerable<Countries> countriesModel = JsonConvert.DeserializeObject<IEnumerable<Countries>>(parsedJson).ToList();
+
+            foreach (var item in countriesModel)
+            {
+                   var newCountries = new Countries()
+                {
+                    Name = item.Name,
+                };
+                this.DbPostgreContext.Countries.Add(newCountries);             
+            }
+
+            this.DbPostgreContext.SaveChanges();
+        }
+
+        private void CitesDeserializeJSON()
+        {
+            if (!File.Exists(citiesFile))
+            {
+                throw new FileNotFoundException("JsonFile not found!", citiesFile);
+            }
+
+            string parsedJson = File.ReadAllText(citiesFile);
+
+            IEnumerable<Cities> citiesModel = JsonConvert.DeserializeObject<IEnumerable<Cities>>(parsedJson).ToList();
+
+            foreach (var item in citiesModel)
+            {
+                var newCity = new Cities()
+                {
+                    Name = item.Name,
+                    CountriesId = item.CountriesId
+                };
+                this.DbPostgreContext.Cities.Add(newCity);
+            }
+
+            this.DbPostgreContext.SaveChanges();
+        }
+
         public void SeedDatabase()
         {
             bool racesSeeded = false;
@@ -206,7 +271,14 @@ namespace WoW.LoadFile
             {
                 this.ConnectRacesClassesDeserializeJSON();
             }
-
+            if (!this.dbPostgreContext.Countries.Any())
+            {
+                this.CountriesDeserializeJSON();
+            }
+            if (!this.dbPostgreContext.Cities.Any())
+            {
+                this.CitesDeserializeJSON();
+            }
         }
     }
 }
