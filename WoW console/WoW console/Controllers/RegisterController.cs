@@ -72,6 +72,7 @@ namespace WoW_console.Controllers
         public string RegisterUser()
         {
             // check if username is unique
+            this.Writer.Clear();
             this.Writer.WriteLineInfo(USERNAME_PROMPT);
             string username = this.Reader.ReadLine();
             this.Writer.WriteLineInfo(PASSWORD_PROMPT);

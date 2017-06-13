@@ -60,6 +60,7 @@ namespace WoW_console.Controllers
 
         public string Login()
         {
+            this.Writer.Clear();
             this.Writer.WriteLineInfo(USERNAME_PROMPT);
             var username = this.Reader.ReadLine();
             this.Writer.WriteLineInfo(PASSWORD_PROMPT);

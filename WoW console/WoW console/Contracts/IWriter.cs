@@ -11,5 +11,7 @@ namespace WoW_console.Contracts
         void WriteLineError(string message);
 
         void WriteLineInfo(string message);
+
+        void Clear();
     }
 }

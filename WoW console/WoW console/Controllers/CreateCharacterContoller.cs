@@ -132,7 +132,8 @@ namespace WoW_console.Controllers
         }
 
         public void GuideUser(string username)
-        {                       
+        {
+            this.Writer.Clear();
             // Retrieve name
             this.Writer.WriteLineInfo(string.Format(PROMPT_MESSAGE, "name"));
             var characterName = this.Reader.ReadLine();

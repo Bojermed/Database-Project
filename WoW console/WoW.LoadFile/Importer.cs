@@ -271,14 +271,6 @@ namespace WoW.LoadFile
             {
                 this.ConnectRacesClassesDeserializeJSON();
             }
-            if (!this.dbPostgreContext.Countries.Any())
-            {
-                this.CountriesDeserializeJSON();
-            }
-            if (!this.dbPostgreContext.Cities.Any())
-            {
-                this.CitesDeserializeJSON();
-            }
         }
     }
 }

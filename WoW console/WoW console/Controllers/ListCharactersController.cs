@@ -67,6 +67,7 @@ namespace WoW_console.Controllers
 
             foreach (var chara in characters)
             {
+                this.Writer.Clear();
                 this.Writer.WriteLine("Name: " + chara.charFacRaceClass.charFacRace.charFac.character.Name);
                 this.Writer.WriteLine("Faction: " + chara.charFacRaceClass.charFacRace.charFac.faction.Name);
                 this.Writer.WriteLine("Race: " + chara.charFacRaceClass.charFacRace.race.Name);

@@ -32,5 +32,9 @@ namespace WoW_console.Providers
             Console.WriteLine(message);
             Console.ResetColor();
         }
+        public void Clear()
+        {
+            Console.Clear();
+        }
     }
 }

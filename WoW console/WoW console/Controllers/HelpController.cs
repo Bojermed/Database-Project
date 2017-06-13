@@ -29,6 +29,7 @@ Example useage: ""--Create Character"" ";
 
         public void StateMessage()
         {
+            this.Writer.Clear();
             this.Writer.WriteLine(COMMANDS_SUMMARY);
         }
     }

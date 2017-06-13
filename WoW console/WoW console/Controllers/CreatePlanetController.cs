@@ -61,6 +61,7 @@ namespace WoW_console.Controllers
 
         public void GuideUser(string username)
         {
+            this.Writer.Clear();
             this.Writer.WriteLineInfo(NAME_PROMPT_MESSAGE);
             var planetName = this.Reader.ReadLine();
             EntityCharacteristics.Add(planetName);
