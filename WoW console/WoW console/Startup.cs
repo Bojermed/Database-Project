@@ -19,26 +19,7 @@ namespace WoW_console
         {
             var kernel = new StandardKernel(new WoWNinjectModule());
             var engine = kernel.Get<Engine>();
-            engine.Start();
+            engine.Start();     
         }
-
-        //public static void GetPDFReport()
-        //{
-        //    var context = new WoWDbContext();
-            
-        //    var pdf = new PdfExporter(context);
-        //    pdf.CreatePDFReport("..\\..\\Pdf-Reports");
-        //}
-
-        //public static void ImportOldData()
-        //{
-        //    var contextImport = new WoWDbContext();
-
-        //    var import = new Importer(contextImport);
-        //    import.ReadFiles();
-        //    import.DeserializeJSON();
-
-        //    contextImport.SaveChanges();
-        //}
     }
 }
