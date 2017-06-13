@@ -2,13 +2,6 @@ Assignement
 
 Create a project of your choice and implement it using Code First approach with Entity Framework. You must use SQL Server 2016 as your database. Part of the data in SQL Server must be provided via external files (Excel, XML, JSON, zip, etc.) of your choice. You should use PostgreSQL and SQLite to store some of the data for your application. You should create PDF reports based on your application logic. They should consists of meaningful data.
 
-Project examples:
-
-Sports ranking
-Online store
-Movie ranking
-Book store
-General Requirements
 
 Use Code First approach
 Use Entity Framework
@@ -29,6 +22,3 @@ The XML files should be read / written through the standard .NET parsers (of you
 For JSON serializations use a non-commercial library / framework of your choice
 Optional Requirements (Bonus points)
 
-Unit test the application (think about how and use the techniques from the previous courses in Telerik Academy and the Design Patterns course)
-You could use Repository pattern or Services of your choice or use pure Entity Framework and DbContext (research the options and choose your preferable way to do it)
-Completely finished and working project is not a requirement but it will be considered a plus
