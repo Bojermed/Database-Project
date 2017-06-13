@@ -1,5 +1,4 @@
-﻿using System.Linq;
-using WoW_console.Contracts;
+﻿using WoW_console.Contracts;
 
 namespace WoW_console
 {
